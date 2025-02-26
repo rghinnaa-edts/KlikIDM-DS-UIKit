@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		50CA6DB52D6EE80100CC7FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CA6D962D6EE80000CC7FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CA6D9D2D6EE80000CC7FBC;
+			remoteInfo = "KlikIDM-DS-UiKit";
+		};
+		50CA6DBF2D6EE80100CC7FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CA6D962D6EE80000CC7FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CA6D9D2D6EE80000CC7FBC;
+			remoteInfo = "KlikIDM-DS-UiKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KlikIDM-DS-UiKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		50CA6DC62D6EE80100CC7FBC /* Exceptions for "KlikIDM-DS-UiKit" folder in "KlikIDM-DS-UiKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 50CA6D9D2D6EE80000CC7FBC /* KlikIDM-DS-UiKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		50CA6DA02D6EE80000CC7FBC /* KlikIDM-DS-UiKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				50CA6DC62D6EE80100CC7FBC /* Exceptions for "KlikIDM-DS-UiKit" folder in "KlikIDM-DS-UiKit" target */,
+			);
+			path = "KlikIDM-DS-UiKit";
+			sourceTree = "<group>";
+		};
+		50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "KlikIDM-DS-UiKitTests";
+			sourceTree = "<group>";
+		};
+		50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "KlikIDM-DS-UiKitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50CA6D9B2D6EE80000CC7FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DB12D6EE80100CC7FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DBB2D6EE80100CC7FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50CA6D952D6EE80000CC7FBC = {
+			isa = PBXGroup;
+			children = (
+				50CA6DA02D6EE80000CC7FBC /* KlikIDM-DS-UiKit */,
+				50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
+				50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
+				50CA6D9F2D6EE80000CC7FBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50CA6D9F2D6EE80000CC7FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */,
+				50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */,
+				50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50CA6D9D2D6EE80000CC7FBC /* KlikIDM-DS-UiKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CA6DC72D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKit" */;
+			buildPhases = (
+				50CA6D9A2D6EE80000CC7FBC /* Sources */,
+				50CA6D9B2D6EE80000CC7FBC /* Frameworks */,
+				50CA6D9C2D6EE80000CC7FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				50CA6DA02D6EE80000CC7FBC /* KlikIDM-DS-UiKit */,
+			);
+			name = "KlikIDM-DS-UiKit";
+			packageProductDependencies = (
+			);
+			productName = "KlikIDM-DS-UiKit";
+			productReference = 50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50CA6DB32D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CA6DCC2D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKitTests" */;
+			buildPhases = (
+				50CA6DB02D6EE80100CC7FBC /* Sources */,
+				50CA6DB12D6EE80100CC7FBC /* Frameworks */,
+				50CA6DB22D6EE80100CC7FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50CA6DB62D6EE80100CC7FBC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
+			);
+			name = "KlikIDM-DS-UiKitTests";
+			packageProductDependencies = (
+			);
+			productName = "KlikIDM-DS-UiKitTests";
+			productReference = 50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50CA6DBD2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CA6DCF2D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKitUITests" */;
+			buildPhases = (
+				50CA6DBA2D6EE80100CC7FBC /* Sources */,
+				50CA6DBB2D6EE80100CC7FBC /* Frameworks */,
+				50CA6DBC2D6EE80100CC7FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50CA6DC02D6EE80100CC7FBC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
+			);
+			name = "KlikIDM-DS-UiKitUITests";
+			packageProductDependencies = (
+			);
+			productName = "KlikIDM-DS-UiKitUITests";
+			productReference = 50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50CA6D962D6EE80000CC7FBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					50CA6D9D2D6EE80000CC7FBC = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					50CA6DB32D6EE80100CC7FBC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 50CA6D9D2D6EE80000CC7FBC;
+					};
+					50CA6DBD2D6EE80100CC7FBC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 50CA6D9D2D6EE80000CC7FBC;
+					};
+				};
+			};
+			buildConfigurationList = 50CA6D992D6EE80000CC7FBC /* Build configuration list for PBXProject "KlikIDM-DS-UiKit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50CA6D952D6EE80000CC7FBC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 50CA6D9F2D6EE80000CC7FBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50CA6D9D2D6EE80000CC7FBC /* KlikIDM-DS-UiKit */,
+				50CA6DB32D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
+				50CA6DBD2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50CA6D9C2D6EE80000CC7FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DB22D6EE80100CC7FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DBC2D6EE80100CC7FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50CA6D9A2D6EE80000CC7FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DB02D6EE80100CC7FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CA6DBA2D6EE80100CC7FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50CA6DB62D6EE80100CC7FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50CA6D9D2D6EE80000CC7FBC /* KlikIDM-DS-UiKit */;
+			targetProxy = 50CA6DB52D6EE80100CC7FBC /* PBXContainerItemProxy */;
+		};
+		50CA6DC02D6EE80100CC7FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50CA6D9D2D6EE80000CC7FBC /* KlikIDM-DS-UiKit */;
+			targetProxy = 50CA6DBF2D6EE80100CC7FBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50CA6DC82D6EE80100CC7FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KlikIDM-DS-UiKit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50CA6DC92D6EE80100CC7FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KlikIDM-DS-UiKit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50CA6DCA2D6EE80100CC7FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50CA6DCB2D6EE80100CC7FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50CA6DCD2D6EE80100CC7FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM-DS-UiKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM-DS-UiKit";
+			};
+			name = Debug;
+		};
+		50CA6DCE2D6EE80100CC7FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM-DS-UiKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM-DS-UiKit";
+			};
+			name = Release;
+		};
+		50CA6DD02D6EE80100CC7FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KlikIDM-DS-UiKit";
+			};
+			name = Debug;
+		};
+		50CA6DD12D6EE80100CC7FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS-UiKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KlikIDM-DS-UiKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50CA6D992D6EE80000CC7FBC /* Build configuration list for PBXProject "KlikIDM-DS-UiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CA6DCA2D6EE80100CC7FBC /* Debug */,
+				50CA6DCB2D6EE80100CC7FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CA6DC72D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CA6DC82D6EE80100CC7FBC /* Debug */,
+				50CA6DC92D6EE80100CC7FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CA6DCC2D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CA6DCD2D6EE80100CC7FBC /* Debug */,
+				50CA6DCE2D6EE80100CC7FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CA6DCF2D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CA6DD02D6EE80100CC7FBC /* Debug */,
+				50CA6DD12D6EE80100CC7FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50CA6D962D6EE80000CC7FBC /* Project object */;
+}
