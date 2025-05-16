@@ -13,7 +13,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.setToolbarHidden(false, animated: animated)
+    }
 
-
+    @IBAction func GoToChip(_ sender: Any) {
+        let vc = UIStoryboard(name: "PromoGiftViewController", bundle: nil).instantiateViewController(withIdentifier: "PromoGift")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func GoToCartPage(_ sender: Any) {
+        let vc = UIStoryboard(name: "CartViewController", bundle: nil).instantiateViewController(withIdentifier: "CartPage")
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

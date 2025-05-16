@@ -7,38 +7,22 @@
 
 import UIKit
 
-class PromoCell: UICollectionViewCell {
+class PromoContentCell: UICollectionViewCell {
     
-    @IBOutlet var containerView: UIView!
+    static let identifier = String(describing: PromoContentCell.self)
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupChipPromo()
-    }
+    @IBOutlet var imgBanner: UIImageView!
+    @IBOutlet var lblTitleBanner: UILabel!
+    @IBOutlet var lblSeeFair: UILabel!
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupChipPromo()
-    }
-    
-    private func setupChipPromo() {
-        let bundle = Bundle(for: type(of: self))
-        if let nib = bundle.loadNibNamed("ChipPromoCell", owner: self, options: nil),
-           let view = nib.first as? UIView {
-            containerView = view
-            addSubview(containerView)
-            containerView.frame = bounds
-            containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        } else {
-            print("Failed to load ChipPromo nib")
+    func setup(_ data: PromoContentModel) {
+        if let image = data.banner {
+            imgBanner.image = image
+            imgBanner.contentMode = .scaleAspectFill
         }
+        lblTitleBanner.text = data.title
         
-        setupUI()
-    }
-    
-    private func setupUI() {
-        vChip.layer.cornerRadius = 6
-        vIndicator.layer.cornerRadius = 2
+        lblSeeFair.isHidden = !data.isEnable
     }
     
 }

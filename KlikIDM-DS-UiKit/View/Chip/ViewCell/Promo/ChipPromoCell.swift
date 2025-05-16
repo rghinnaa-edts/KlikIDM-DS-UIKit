@@ -7,15 +7,20 @@
 
 import UIKit
 
-class ChipPromoCell: UIView {
+class ChipPromoCell: UICollectionViewCell {
     
     @IBOutlet var containerView: UIView!
+    @IBOutlet var vChip: UIView!
     @IBOutlet var lblTitle: UILabel!
-    @IBOutlet var vMaksItem: UIView!
-    @IBOutlet var lblMaksItem: UILabel!
+    @IBOutlet var vIndicator: UIView!
     
-    var isEnable: Bool = false
-    var bgColor: UIColor = UIColor.grey30
+    var isSelectedState: Bool = false {
+        didSet {
+            setupBackground(isEnable: isEnable)
+        }
+    }
+    
+   private var isEnable: Bool = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,18 +48,32 @@ class ChipPromoCell: UIView {
     }
     
     private func setupUI() {
-        setupBackground(isEnable: isEnable, bgColor: bgColor)
-        
-        vMaksItem.layer.cornerRadius = 4
-        vMaksItem.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        vChip.layer.cornerRadius = 6
+        vIndicator.layer.cornerRadius = 2
     }
     
-    private func setupBackground(isEnable: Bool, bgColor: UIColor) {
+    private func setupBackground(isEnable: Bool) {
+        vIndicator.isHidden = !isSelectedState
+        
         if isEnable {
-            containerView.backgroundColor = bgColor
+            if isSelectedState {
+                vChip.backgroundColor = UIColor.blue50
+                lblTitle.textColor = UIColor.white
+            } else {
+                vChip.backgroundColor = UIColor.blue20
+                lblTitle.textColor = UIColor.grey50
+            }
         } else {
-            containerView.backgroundColor = UIColor.grey30
+            vChip.backgroundColor = UIColor.grey30
+            lblTitle.textColor = UIColor.white
         }
+    }
+    
+    func loadData(data: ChipPromoModel) {
+        lblTitle.text = data.title
+        isEnable = data.isEnable
+        
+        setupBackground(isEnable: isEnable)
     }
     
 }

@@ -7,19 +7,29 @@
 
 import UIKit
 
-class StampBrandProduct: UIView {
+class Chip: UIView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     
+    weak var delegate: ChipDelegate?
+    
+    var viewCell: UICollectionViewCell? = nil
+    var data: [ChipPromoModel] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    var currentlySelectedBucketId: String? = nil
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupStampBrandProduct()
+        setupChip()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupStampBrandProduct()
+        setupChip()
     }
     
     override func awakeFromNib() {
@@ -28,8 +38,8 @@ class StampBrandProduct: UIView {
         setupUI()
     }
 
-    private func setupStampBrandProduct() {
-        if let nib = Bundle.main.loadNibNamed("StampBrandProduct", owner: self, options: nil),
+    private func setupChip() {
+        if let nib = Bundle.main.loadNibNamed("Chip", owner: self, options: nil),
            let card = nib.first as? UIView {
             containerView = card
             containerView.frame = bounds
@@ -43,52 +53,109 @@ class StampBrandProduct: UIView {
     }
     
     private func setupUI() {
+        setupChipView()
+        
+        DispatchQueue.main.async {
+            self.selectDefaultChip()
+        }
     }
     
-    private func setupProductView() {
+    private func setupChipView() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumInteritemSpacing = 12
         flowLayout.minimumLineSpacing = 12
-        flowLayout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-        
-        let cellWidth: CGFloat = 125
-        let cellHeight: CGFloat = 180
-        
-        flowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
-        
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         collectionView.collectionViewLayout = flowLayout
-        collectionView.backgroundColor = UIColor.Support.primaryHighlightWeak
+        collectionView.backgroundColor = .clear
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.alwaysBounceHorizontal = true
         collectionView.decelerationRate = .normal
-        collectionView.register(StampCardSmall.self, forCellWithReuseIdentifier: "StampCardSmall")
-        
-        let totalHeight = cellHeight + flowLayout.sectionInset.top + flowLayout.sectionInset.bottom
-            
-        collectionView.heightAnchor.constraint(equalToConstant: totalHeight).isActive = true
+        collectionView.register(ChipPromoCell.self, forCellWithReuseIdentifier: "ChipPromoCell")
         
         collectionView.delegate = self
         collectionView.dataSource = self
     }
     
+    func selectDefaultChip() {
+        guard !data.isEmpty else { return }
+        
+        let defaultSelectedIndexPath = IndexPath(item: 0, section: 0)
+        currentlySelectedBucketId = data[0].id
+        
+        if let cell = collectionView.cellForItem(at: defaultSelectedIndexPath) as? ChipPromoCell {
+            for index in 0..<data.count {
+                let indexPath = IndexPath(item: index, section: 0)
+                if let otherCell = collectionView.cellForItem(at: indexPath) as? ChipPromoCell {
+                    otherCell.isSelectedState = false
+                }
+            }
+            
+            cell.isSelectedState = true
+        }
+    }
+    
 }
 
-extension StampBrandProduct: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+protocol ChipDelegate: AnyObject {
+    func didSelectChip(at index: Int, withId id: String)
+}
+
+extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChipPromoCell", for: indexPath) as! ChipPromoCell
+        
+        let data = data[indexPath.item]
+        cell.loadData(data: data)
+        cell.isSelectedState = (data.id == currentlySelectedBucketId)
+        
+        return cell
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+        let width = 90
+        let height = 48
+        
+        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        for index in 0..<data.count {
+            let deselectIndexPath = IndexPath(item: index, section: 0)
+            if let cell = collectionView.cellForItem(at: deselectIndexPath) as? ChipPromoCell {
+                cell.isSelectedState = false
+            }
+        }
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? ChipPromoCell {
+            cell.isSelectedState = true
+        }
+        
+        let selectedData = data[indexPath.item].id
+        currentlySelectedBucketId = selectedData
+        
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let cellFrame = flowLayout.layoutAttributesForItem(at: indexPath)?.frame ?? .zero
+            
+            let contentOffsetX = cellFrame.midX - (collectionView.bounds.width / 2)
+            
+            let adjustedOffsetX = max(0, min(contentOffsetX,
+                                             collectionView.contentSize.width - collectionView.bounds.width))
+            
+            collectionView.setContentOffset(CGPoint(x: adjustedOffsetX, y: 0), animated: true)
+        }
+        
+        delegate?.didSelectChip(at: indexPath.item, withId: selectedData)
         
     }
     
