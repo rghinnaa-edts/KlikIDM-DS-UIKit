@@ -19,7 +19,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="dFX-mr-4HO">
-            <rect key="frame" x="0.0" y="0.0" width="90" height="48"/>
+            <rect key="frame" x="0.0" y="0.0" width="90" height="56"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dr-bP-uav">
@@ -62,7 +62,7 @@
                 <constraint firstAttribute="trailing" secondItem="FhQ-GD-14C" secondAttribute="trailing" id="zS4-3Z-7Iw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="29.007633587786259" y="-488.02816901408454"/>
+            <point key="canvasLocation" x="29.007633587786259" y="-485.21126760563385"/>
         </view>
     </objects>
     <resources>

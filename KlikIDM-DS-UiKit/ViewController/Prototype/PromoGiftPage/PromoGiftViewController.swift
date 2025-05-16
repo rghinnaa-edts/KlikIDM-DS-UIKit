@@ -53,7 +53,7 @@ class PromoGiftViewController: UIViewController {
         vChip.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         vChip.layer.shadowRadius = 3
         
-        vChip.data = items1.map {$0.chip}
+        vChip.data = getCurrentContentItems().map { $0.chip }
         
         vChip.delegate = self
     }
@@ -96,12 +96,7 @@ class PromoGiftViewController: UIViewController {
     }
     
     private func updateChipSelection() {
-        if selectedTabIndex == 0 {
-            vChip.data = items1.map {$0.chip}
-        } else {
-            vChip.data = items2.map {$0.chip}
-        }
-        
+        vChip.data = getCurrentContentItems().map { $0.chip }
         vChip.selectDefaultChip()
     }
     
@@ -236,21 +231,13 @@ extension PromoGiftViewController: UICollectionViewDelegate, UICollectionViewDat
             let data = tabItems[indexPath.item]
             cell.loadData(data)
             
-            if let cell = collectionTab.cellForItem(at: IndexPath(item: 0, section: 0)) as? TabCell {
-                cell.isSelectedState = true
-            }
+            cell.isSelectedState = (indexPath.item == selectedTabIndex)
             
             return cell
         } else {
             let cell = collectionContentChip.dequeueReusableCell(withReuseIdentifier: PromoContentCell.identifier, for: indexPath) as! PromoContentCell
             
-            var contentItem: [PromoContentModel] = []
-            
-            if selectedTabIndex == 0 {
-                contentItem = items1.map { $0.content }
-            } else {
-                contentItem = items2.map { $0.content }
-            }
+            let contentItem = getCurrentContentItems().map { $0.content }
             
             cell.setup(contentItem[indexPath.item])
             
@@ -304,7 +291,7 @@ extension PromoGiftViewController: UICollectionViewDelegate, UICollectionViewDat
 
 extension PromoGiftViewController: ChipDelegate {
     func didSelectChip(at index: Int, withId id: String) {
-        guard !isSyncingCollectionView, index < items1.count else { return }
+        guard !isSyncingCollectionView, index < getCurrentContentItems().count else { return }
         
         let indexPath = IndexPath(item: index, section: 0)
         collectionContentChip.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
