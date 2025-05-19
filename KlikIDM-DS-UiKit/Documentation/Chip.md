@@ -10,7 +10,7 @@ The `Chip` component is a compact UI element that represents information, attrib
 
 ## Installation
 To use the `Chip` component, please follow this step.
-- For current availability, It's available only when you add all the Chip class file of swift and XIB into your project. It placed at `Poinku-DS/Component/View/Chip`
+- For current availability, It's available only when you add all the Chip class file of swift and XIB into your project. It placed at `KlikIDM-DS-UiKit/View/Chip`
 - Create class of View Cell (UICollectionViewCell) to implement UI of chip items with extended protocol "ChipCellProtocol"
 - Create class of Data Model (struct) to define chip model with extended protocol "ChipModelProtocol"
 
@@ -133,7 +133,7 @@ struct ChipPromoModel: ChipModelProtocol {
 }
 ```
 
-You can see detail implementation at `Poinku-DS/Component/ViewController/Prototype/PromoGiftPage/PromoGiftPage.swift`
+You can see detail implementation at `KlikIDM-DS-UiKit/ViewController/Prototype/PromoGiftPage/PromoGiftPage.swift`
 
 ## Methods
 `registerCellType<T: UICollectionViewCell>(_ cellClass: T.Type, withIdentifier identifier: String)`
