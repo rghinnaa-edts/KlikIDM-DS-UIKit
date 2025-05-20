@@ -56,7 +56,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dapatkan gratis ongkir untuk pembelanjaan di atas Rp 100.000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-zt-quP">
-                                                                <rect key="frame" x="40" y="12" width="276" height="32"/>
+                                                                <rect key="frame" x="40" y="12" width="291" height="32"/>
                                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                                                 <color key="textColor" name="Grey-60"/>
                                                                 <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipe Pemesanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ9-uK-zEb">
-                                                        <rect key="frame" x="16" y="16" width="89.666666666666671" height="14"/>
+                                                        <rect key="frame" x="15.999999999999993" y="16" width="96.333333333333314" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="14" id="efz-Du-sJh"/>
                                                         </constraints>
@@ -150,19 +150,19 @@
                                                                         <rect key="frame" x="28" y="0.0" width="273" height="52"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Pesan Antar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzj-wT-0Nn">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="273" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="273" height="14.666666666666666"/>
                                                                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="12"/>
                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Regular Rp 2.500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojs-s3-BcR">
-                                                                                <rect key="frame" x="0.0" y="18" width="273" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="18.666666666666686" width="273" height="14.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="12"/>
                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Estimasi 2 Hari Kerja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eE-ec-kUg">
-                                                                                <rect key="frame" x="0.0" y="36" width="273" height="16"/>
+                                                                                <rect key="frame" x="0.0" y="37.333333333333314" width="273" height="14.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                 <nil key="highlightedColor"/>
@@ -324,19 +324,19 @@
                                                                                         <rect key="frame" x="28" y="0.0" width="309" height="142"/>
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Wisma BNI 46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHM-ea-KX0">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="309" height="14"/>
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="309" height="14.666666666666666"/>
                                                                                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="12"/>
                                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jhon Doe (08182738292)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhX-A4-c2R">
-                                                                                                <rect key="frame" x="0.0" y="64" width="309" height="14"/>
+                                                                                                <rect key="frame" x="0.0" y="63.666666666666679" width="309" height="14.666666666666664"/>
                                                                                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="12"/>
                                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Karet Tengsin, Tanah Abang, Central Jakarta " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z17-T5-Fed">
-                                                                                                <rect key="frame" x="0.0" y="128" width="309" height="14"/>
+                                                                                                <rect key="frame" x="0.0" y="127.33333333333339" width="309" height="14.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                                                                                 <color key="textColor" name="Grey-70"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -690,7 +690,6 @@
                                                                 <rect key="frame" x="285" y="0.0" width="76" height="84"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="76" id="EwD-Jv-RGp"/>
-                                                                    <constraint firstAttribute="height" constant="76" id="r08-CL-qDT"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tebus Murah dan Hadiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL0-Gc-enL">
@@ -708,6 +707,10 @@
                                                                         <color key="textColor" name="Grey-60"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-k3-597" userLabel="Loading" customClass="Skeleton" customModule="KlikIDM_DS_UiKit" customModuleProvider="target">
+                                                                        <rect key="frame" x="12" y="8" width="217" height="19"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    </view>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic-btn-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="8Ik-ea-30A">
                                                                         <rect key="frame" x="241" y="7.6666666666666288" width="20" height="20"/>
                                                                         <constraints>
@@ -719,10 +722,14 @@
                                                                 <color key="backgroundColor" name="Blue-20"/>
                                                                 <constraints>
                                                                     <constraint firstItem="8Ik-ea-30A" firstAttribute="leading" secondItem="gre-dI-HNx" secondAttribute="trailing" constant="8" id="47x-TK-7Q0"/>
+                                                                    <constraint firstItem="9Jh-k3-597" firstAttribute="leading" secondItem="3sk-Dh-ZJS" secondAttribute="leading" constant="12" id="50r-GD-Tno"/>
                                                                     <constraint firstItem="gre-dI-HNx" firstAttribute="top" secondItem="3sk-Dh-ZJS" secondAttribute="top" constant="8" id="5eL-nw-frF"/>
                                                                     <constraint firstAttribute="trailing" secondItem="8Ik-ea-30A" secondAttribute="trailing" constant="12" id="Q90-px-g3I"/>
                                                                     <constraint firstItem="8Ik-ea-30A" firstAttribute="centerY" secondItem="gre-dI-HNx" secondAttribute="centerY" id="URL-6V-pKb"/>
                                                                     <constraint firstAttribute="bottom" secondItem="gre-dI-HNx" secondAttribute="bottom" constant="8" id="VBZ-xd-LMY"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="9Jh-k3-597" secondAttribute="bottom" constant="8" id="aP7-ci-DlF"/>
+                                                                    <constraint firstItem="8Ik-ea-30A" firstAttribute="leading" secondItem="9Jh-k3-597" secondAttribute="trailing" constant="12" id="fR4-oj-QGq"/>
+                                                                    <constraint firstItem="9Jh-k3-597" firstAttribute="top" secondItem="3sk-Dh-ZJS" secondAttribute="top" constant="8" id="mio-nE-EjB"/>
                                                                     <constraint firstItem="gre-dI-HNx" firstAttribute="leading" secondItem="3sk-Dh-ZJS" secondAttribute="leading" constant="12" id="nhI-Wo-AQD"/>
                                                                 </constraints>
                                                             </view>
@@ -856,7 +863,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/4 Produk Tersedia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8r-qN-B7Q" customClass="PaddingLabel" customModule="KlikIDM_DS_UiKit" customModuleProvider="target">
-                                                        <rect key="frame" x="15.999999999999993" y="52" width="107.33333333333331" height="24"/>
+                                                        <rect key="frame" x="16" y="52" width="118" height="24"/>
                                                         <color key="backgroundColor" name="Grey-20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="wGK-UA-gw4"/>
@@ -1543,6 +1550,10 @@
                                                 <color key="textColor" name="Grey-60"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uC-0G-GEc" userLabel="Loading" customClass="Skeleton" customModule="KlikIDM_DS_UiKit" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="8" width="264" height="12"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-btn-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="VUf-LK-T0f">
                                                 <rect key="frame" x="297" y="4" width="20" height="20"/>
                                                 <constraints>
@@ -1553,8 +1564,12 @@
                                         </subviews>
                                         <color key="backgroundColor" name="Blue-20"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7uC-0G-GEc" secondAttribute="bottom" constant="8" id="4oe-Cu-W23"/>
+                                            <constraint firstItem="7uC-0G-GEc" firstAttribute="top" secondItem="ehJ-oh-Hdf" secondAttribute="top" constant="8" id="BoJ-Dl-WLg"/>
                                             <constraint firstItem="VUf-LK-T0f" firstAttribute="centerY" secondItem="lWd-VM-HPJ" secondAttribute="centerY" id="CR0-eP-CpF"/>
+                                            <constraint firstItem="VUf-LK-T0f" firstAttribute="leading" secondItem="7uC-0G-GEc" secondAttribute="trailing" constant="21" id="Idh-nV-TV6"/>
                                             <constraint firstItem="lWd-VM-HPJ" firstAttribute="leading" secondItem="ehJ-oh-Hdf" secondAttribute="leading" constant="12" id="cXK-aO-4se"/>
+                                            <constraint firstItem="7uC-0G-GEc" firstAttribute="leading" secondItem="ehJ-oh-Hdf" secondAttribute="leading" constant="12" id="oOl-ah-gr1"/>
                                             <constraint firstAttribute="trailing" secondItem="VUf-LK-T0f" secondAttribute="trailing" constant="12" id="qGK-VE-HHX"/>
                                             <constraint firstAttribute="bottom" secondItem="lWd-VM-HPJ" secondAttribute="bottom" constant="8" id="s0I-2O-FJQ"/>
                                             <constraint firstItem="lWd-VM-HPJ" firstAttribute="top" secondItem="ehJ-oh-Hdf" secondAttribute="top" constant="8" id="wG7-Lk-LYf"/>
@@ -1588,7 +1603,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic-arrow-left"/>
                                         <connections>
-                                            <action selector="btnBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Ab-Sz-hJr"/>
+                                            <action selector="goBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="num-6Z-eKW"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keranjang Belanja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-x0-k7c">
@@ -1655,6 +1670,8 @@
                         <outlet property="containerInsideStickPromoGift" destination="ehJ-oh-Hdf" id="zSv-TM-mmp"/>
                         <outlet property="containerPromoGift" destination="ibZ-IT-nML" id="nYt-09-f7c"/>
                         <outlet property="containerStickPromoGift" destination="s8C-hd-Lnl" id="Fqn-4j-ZNb"/>
+                        <outlet property="loadingPromo" destination="9Jh-k3-597" id="8N1-kf-0uZ"/>
+                        <outlet property="loadingPromoTop" destination="7uC-0G-GEc" id="haP-iC-3ei"/>
                         <outlet property="scrollView" destination="Ikm-YM-e4d" id="505-WU-bCv"/>
                     </connections>
                 </viewController>

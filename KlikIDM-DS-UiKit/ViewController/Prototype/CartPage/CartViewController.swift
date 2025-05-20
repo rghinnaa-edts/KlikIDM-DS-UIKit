@@ -17,113 +17,101 @@ class CartViewController: UIViewController {
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var btnBack: UIButton!
     
-    private var stickPromoGiftConstraint: [NSLayoutConstraint] = []
-    private var isActivelyScrolling: Bool = false
+    @IBOutlet var loadingPromoTop: Skeleton!
+    @IBOutlet var loadingPromo: Skeleton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        self.navigationController?.setToolbarHidden(true, animated: animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        navigationController?.setToolbarHidden(true, animated: animated)
     }
     
     private func setupUI() {
         scrollView.delegate = self
-        setupViewStickPromoGift()
-        setupViewPromoGift()
-        setupCoupon()
+        
+        setupLoadingView()
+        
+        containerStickPromoGift.isHidden = true
+        setupPromoGiftContainers()
+        
+        containerCoupon.layer.borderWidth = 1
+        containerCoupon.layer.borderColor = UIColor.blue50.cgColor
         
         btnBack.setTitle("", for: .normal)
     }
     
-    private func setupViewStickPromoGift() {
-        containerStickPromoGift.isHidden = true
-        
+    private func setupPromoGiftContainers() {
         containerStickPromoGift.layer.borderWidth = 1
         containerStickPromoGift.layer.borderColor = UIColor.blue50.cgColor
-        
         containerStickPromoGift.layer.shadowOpacity = 0.15
-        containerStickPromoGift.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        containerStickPromoGift.layer.shadowOffset = CGSize(width: 0, height: 5)
         containerStickPromoGift.layer.shadowRadius = 3
-        
         containerInsideStickPromoGift.layer.cornerRadius = 14
-    }
-    
-    private func setupViewPromoGift() {
+        
         containerPromoGift.layer.cornerRadius = 8
         containerInsidePromoGift.layer.cornerRadius = 14
     }
     
-    private func setupCoupon() {
-        containerCoupon.layer.borderWidth = 1
-        containerCoupon.layer.borderColor = UIColor.blue50.cgColor
-    }
-    
-    @IBAction func btnBack(_ sender: Any) {
-        if self.navigationController != nil {
-            self.navigationController?.popViewController(animated: true)
+    private func setupLoadingView() {
+        loadingPromoTop.isHidden = false
+        loadingPromo.isHidden = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in guard let self = self else { return }
+            
+            loadingPromoTop.isHidden = true
+            loadingPromo.isHidden = true
         }
     }
+    
+    @IBAction func goBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension CartViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        self.isActivelyScrolling = true
-        
-        let slidePromoGiftTransform = CGAffineTransform(
-            translationX: 0,
-            y: -self.containerStickPromoGift.frame.height
-        )
-        
-        let slideCouponTransform = CGAffineTransform(
-            translationX: 0,
-            y: self.containerCoupon.frame.height
-        )
-        
-        UIView.animate(withDuration: 0.2) {
-            self.containerStickPromoGift.transform = slidePromoGiftTransform
-            self.containerCoupon.transform = slideCouponTransform
-        }
+        hideView()
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
-            scrollingHasStopped(scrollView)
+            handleScrollStop(scrollView)
         }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        scrollingHasStopped(scrollView)
+        handleScrollStop(scrollView)
     }
     
-    private func scrollingHasStopped(_ scrollView: UIScrollView) {
-        self.isActivelyScrolling = false
-        
+    private func hideView() {
+        UIView.animate(withDuration: 0.2) {
+            self.containerStickPromoGift.transform = CGAffineTransform(translationX: 0, y: -self.containerStickPromoGift.frame.height)
+            self.containerCoupon.transform = CGAffineTransform(translationX: 0, y: self.containerCoupon.frame.height)
+        }
+    }
+    
+    private func handleScrollStop(_ scrollView: UIScrollView) {
         let scrollOffset = scrollView.contentOffset.y
         let promoGiftFrame = containerPromoGift.convert(containerPromoGift.bounds, to: scrollView)
-        let transitionOffset: CGFloat = promoGiftFrame.origin.y + promoGiftFrame.height
+        let transitionOffset = promoGiftFrame.origin.y + promoGiftFrame.height
         
-        let finalTransform = CGAffineTransform(
-            translationX: 0,
-            y: 0
-        )
+        let resetTransform = CGAffineTransform.identity
         
         if scrollOffset > transitionOffset {
             containerStickPromoGift.isHidden = false
-            
             UIView.animate(withDuration: 0.3) {
-                self.containerStickPromoGift.transform = finalTransform
+                self.containerStickPromoGift.transform = resetTransform
             }
         }
         
         UIView.animate(withDuration: 0.3) {
-            self.containerCoupon.transform = finalTransform
+            self.containerCoupon.transform = resetTransform
         }
     }
 }

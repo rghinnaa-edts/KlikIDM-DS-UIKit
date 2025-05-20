@@ -15,7 +15,7 @@ class PromoGiftViewController: UIViewController {
     @IBOutlet var btnBack: UIButton!
     @IBOutlet var collectionTab: UICollectionView!
     @IBOutlet var collectionContentChip: UICollectionView!
-    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet var loadingView: UIView!
     
     var selectedTabIndex = 0
     var tabItems: [TabModel] = []
@@ -43,29 +43,10 @@ class PromoGiftViewController: UIViewController {
         setupContentChip()
         setupCollectionTab()
         
-        loadingIndicator.isHidden = true
+        loadingView.isHidden = true
         
         btnBack.setTitle("", for: .normal)
     }
-    
-    private func setupChip() {
-        vChip.layer.shadowOpacity = 0.15
-        vChip.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
-        vChip.layer.shadowRadius = 3
-        
-        vChip.data = getCurrentContentItems().map { $0.chip }
-        
-        vChip.delegate = self
-    }
-    
-    private func setupATC() {
-        vATC.layer.shadowOpacity = 0.15
-        vATC.layer.shadowOffset = CGSize(width: 0.0, height: -3.0)
-        vATC.layer.shadowRadius = 3
-        
-        btnATC.layer.cornerRadius = 4
-    }
-    
     func setupCollectionTab() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
@@ -84,6 +65,26 @@ class PromoGiftViewController: UIViewController {
         collectionTab.dataSource = self
     }
     
+    private func setupChip() {
+        vChip.layer.shadowOpacity = 0.15
+        vChip.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        vChip.layer.shadowRadius = 3
+        
+        vChip.delegate = self
+        
+        vChip.registerCellType(ChipPromoCell.self, withIdentifier: "ChipPromoCell")
+        vChip.setData(getCurrentContentItems().map { $0.chip })
+        vChip.selectDefaultChip()
+    }
+    
+    private func setupATC() {
+        vATC.layer.shadowOpacity = 0.15
+        vATC.layer.shadowOffset = CGSize(width: 0.0, height: -3.0)
+        vATC.layer.shadowRadius = 3
+        
+        btnATC.layer.cornerRadius = 4
+    }
+    
     private func setupContentChip() {
         collectionContentChip.delegate = self
         collectionContentChip.dataSource = self
@@ -91,8 +92,12 @@ class PromoGiftViewController: UIViewController {
         let nib = UINib(nibName: "PromoContentCell", bundle: nil)
         collectionContentChip.register(nib, forCellWithReuseIdentifier: PromoContentCell.identifier)
         
-        let indexPath = IndexPath(item: 0, section: 0)
-        self.collectionContentChip.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        let firstItemPath = IndexPath(item: 0, section: 0)
+        if !getCurrentContentItems().isEmpty {
+            collectionContentChip.scrollToItem(at: firstItemPath, at: .centeredHorizontally, animated: false)
+        }
+        
+        collectionContentChip.reloadData()
     }
     
     private func updateChipSelection() {
@@ -107,15 +112,11 @@ class PromoGiftViewController: UIViewController {
     private func showLoadingState() {
         vChip.isHidden = true
         collectionContentChip.isHidden = true
-        loadingIndicator.isHidden = false
-        
-        loadingIndicator.startAnimating()
+        loadingView.isHidden = false
     }
     
     private func hideLoadingState() {
-        loadingIndicator.stopAnimating()
-        
-        loadingIndicator.isHidden = true
+        loadingView.isHidden = true
         vChip.isHidden = false
         collectionContentChip.isHidden = false
     }
@@ -204,9 +205,7 @@ class PromoGiftViewController: UIViewController {
     }
     
     @IBAction func btnBack(_ sender: Any) {
-        if self.navigationController != nil {
-            self.navigationController?.popViewController(animated: true)
-        }
+        navigationController?.popViewController(animated: true)
     }
 }
 

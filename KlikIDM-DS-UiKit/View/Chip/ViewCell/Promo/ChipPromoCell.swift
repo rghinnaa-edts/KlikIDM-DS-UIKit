@@ -77,3 +77,18 @@ class ChipPromoCell: UICollectionViewCell {
     }
     
 }
+
+extension ChipPromoCell: ChipCellProtocol {
+    func loadData(item: ChipModelProtocol) {
+        if let customData = item as? ChipPromoModel {
+            loadData(data: customData)
+        } else {
+            let customData = ChipPromoModel(
+                id: item.id,
+                title: "",
+                isEnable: item.isEnable
+            )
+            loadData(data: customData)
+        }
+    }
+}
