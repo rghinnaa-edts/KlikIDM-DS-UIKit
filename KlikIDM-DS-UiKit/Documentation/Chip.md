@@ -33,6 +33,15 @@ private func setupChip() {
 
 ====EXAMPLE OF "Tebus Murah dan Promo" Page====
 
+- Create ChipPromoModel.swift
+```swift
+struct ChipPromoModel: ChipModelProtocol {
+    var id: String
+    var title: String
+    var isEnable: Bool
+}
+```
+
 - Create ChipPromoCell.swift
 ```swift
 class ChipPromoCell: UICollectionViewCell {
@@ -121,15 +130,6 @@ extension ChipPromoCell: ChipCellProtocol {
             loadData(data: customData)
         }
     }
-}
-```
-
-- Create ChipPromoModel.swift
-```swift
-struct ChipPromoModel: ChipModelProtocol {
-    var id: String
-    var title: String
-    var isEnable: Bool
 }
 ```
 
