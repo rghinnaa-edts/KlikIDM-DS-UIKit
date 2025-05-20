@@ -1,5 +1,5 @@
 //
-//  StampBrandProduct.swift
+//  Chip.swift
 //  Poinku-DS
 //
 //  Created by Rizka Ghinna Auliya on 04/03/25.
@@ -7,37 +7,84 @@
 
 import UIKit
 
-class Chip: UIView {
-    
+@objc class Chip: UIView {
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     
     weak var delegate: ChipDelegate?
     
-    var viewCell: UICollectionViewCell? = nil
-    var data: [ChipPromoModel] = [] {
+    var data: [Any] = []
+    var cellReuseIdentifier: String = ""
+    var currentlySelectedBucketId: String? = nil
+    
+    func getItemId(_ item: Any) -> String { return "" }
+    func setSelectedState(_ cell: UICollectionViewCell, _ isSelected: Bool) {}
+    func configureCell(_ cell: UICollectionViewCell, _ item: Any, _ index: Int) {}
+}
+
+
+class ChipBase<CellType: UICollectionViewCell>: Chip {
+    
+    var cellClass: AnyClass
+    
+    override var data: [Any] {
         didSet {
             collectionView.reloadData()
         }
     }
-    var currentlySelectedBucketId: String? = nil
+    
+    override func getItemId(_ item: Any) -> String {
+        if let getItemId = getItemIdClosure {
+            return getItemId(item)
+        }
+        return ""
+    }
+    
+    override func setSelectedState(_ cell: UICollectionViewCell, _ isSelected: Bool) {
+        if let typedCell = cell as? CellType, let setSelectedState = setSelectedStateClosure {
+            setSelectedState(typedCell, isSelected)
+        }
+    }
+    
+    override func configureCell(_ cell: UICollectionViewCell, _ item: Any, _ index: Int) {
+        if let typedCell = cell as? CellType, let configureCell = configureCellClosure {
+            configureCell(typedCell, item, index)
+        }
+    }
+    
+    var configureCellClosure: ((CellType, Any, Int) -> Void)?
+    var getItemIdClosure: ((Any) -> String)?
+    var setSelectedStateClosure: ((CellType, Bool) -> Void)?
+    
+    init(frame: CGRect, cellClass: AnyClass, cellReuseIdentifier: String) {
+        self.cellClass = cellClass
+        super.init(frame: frame)
+        
+        self.cellReuseIdentifier = cellReuseIdentifier
+        setupChip()
+    }
     
     override init(frame: CGRect) {
+        self.cellClass = CellType.self
         super.init(frame: frame)
+        
+        self.cellReuseIdentifier = String(describing: CellType.self)
         setupChip()
     }
 
     required init?(coder: NSCoder) {
+        self.cellClass = CellType.self
         super.init(coder: coder)
+        
+        self.cellReuseIdentifier = String(describing: CellType.self)
         setupChip()
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         setupUI()
     }
-
+    
     private func setupChip() {
         if let nib = Bundle.main.loadNibNamed("Chip", owner: self, options: nil),
            let card = nib.first as? UIView {
@@ -48,7 +95,7 @@ class Chip: UIView {
             
             setupUI()
         } else {
-            print("Failed to load StampBrandProduct XIB")
+            print("Failed to load Chip XIB")
         }
     }
     
@@ -73,7 +120,7 @@ class Chip: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.alwaysBounceHorizontal = true
         collectionView.decelerationRate = .normal
-        collectionView.register(ChipPromoCell.self, forCellWithReuseIdentifier: "ChipPromoCell")
+        collectionView.register(cellClass, forCellWithReuseIdentifier: cellReuseIdentifier)
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -83,20 +130,19 @@ class Chip: UIView {
         guard !data.isEmpty else { return }
         
         let defaultSelectedIndexPath = IndexPath(item: 0, section: 0)
-        currentlySelectedBucketId = data[0].id
+        currentlySelectedBucketId = getItemId(data[0])
         
-        if let cell = collectionView.cellForItem(at: defaultSelectedIndexPath) as? ChipPromoCell {
+        if let cell = collectionView.cellForItem(at: defaultSelectedIndexPath) as? CellType {
             for index in 0..<data.count {
                 let indexPath = IndexPath(item: index, section: 0)
-                if let otherCell = collectionView.cellForItem(at: indexPath) as? ChipPromoCell {
-                    otherCell.isSelectedState = false
+                if let otherCell = collectionView.cellForItem(at: indexPath) as? CellType {
+                    setSelectedState(otherCell, false)
                 }
             }
             
-            cell.isSelectedState = true
+            setSelectedState(cell, true)
         }
     }
-    
 }
 
 protocol ChipDelegate: AnyObject {
@@ -109,19 +155,18 @@ extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath)
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChipPromoCell", for: indexPath) as! ChipPromoCell
+        let item = data[indexPath.item]
+        configureCell(cell, item, indexPath.item)
         
-        let data = data[indexPath.item]
-        cell.loadData(data: data)
-        cell.isSelectedState = (data.id == currentlySelectedBucketId)
+        let isSelected = getItemId(item) == currentlySelectedBucketId
+        setSelectedState(cell, isSelected)
         
         return cell
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let width = 90
         let height = 48
         
@@ -129,19 +174,18 @@ extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         for index in 0..<data.count {
             let deselectIndexPath = IndexPath(item: index, section: 0)
-            if let cell = collectionView.cellForItem(at: deselectIndexPath) as? ChipPromoCell {
-                cell.isSelectedState = false
+            if let cell = collectionView.cellForItem(at: deselectIndexPath) {
+                setSelectedState(cell, false)
             }
         }
         
-        if let cell = collectionView.cellForItem(at: indexPath) as? ChipPromoCell {
-            cell.isSelectedState = true
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            setSelectedState(cell, true)
         }
         
-        let selectedData = data[indexPath.item].id
+        let selectedData = getItemId(data[indexPath.item])
         currentlySelectedBucketId = selectedData
         
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -155,8 +199,8 @@ extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
             collectionView.setContentOffset(CGPoint(x: adjustedOffsetX, y: 0), animated: true)
         }
         
-        delegate?.didSelectChip(at: indexPath.item, withId: selectedData)
-        
+        if let delegate = (self as? ChipBase<UICollectionViewCell>)?.delegate {
+            delegate.didSelectChip(at: indexPath.item, withId: selectedData)
+        }
     }
-    
 }

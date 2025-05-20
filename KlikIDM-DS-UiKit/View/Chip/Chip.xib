@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Chip" customModule="KlikIDM_DS_UiKit" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="7Jl-ez-kbn" id="AbB-3t-cuJ"/>
-                <outlet property="containerView" destination="SAN-fq-KTa" id="0U4-yC-dwC"/>
+                <outlet property="collectionView" destination="7Jl-ez-kbn" id="dLN-Kx-rjx"/>
+                <outlet property="containerView" destination="SAN-fq-KTa" id="kxD-va-iU1"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
