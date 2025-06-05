@@ -86,15 +86,11 @@ struct Font {
             static let Small = BaseFont.regular(size: 16, lineHeight: 18)
         }
         
-        
-        
         struct B3 {
             static let Large = BaseFont.semibold(size: 12, lineHeight: 16)
             static let Medium = BaseFont.medium(size: 12, lineHeight: 16)
             static let Small = BaseFont.regular(size: 12, lineHeight: 16)
         }
-        
-        
     }
     
     struct Paragraph {

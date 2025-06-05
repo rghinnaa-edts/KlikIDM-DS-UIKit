@@ -8,6 +8,6 @@
 import UIKit
 
 struct PromoGiftModel {
-    var chip: ChipPromoModel
+    var chip: TabDefaultModel
     var content: PromoContentModel
 }

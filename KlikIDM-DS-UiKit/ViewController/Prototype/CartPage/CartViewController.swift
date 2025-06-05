@@ -39,22 +39,13 @@ class CartViewController: UIViewController {
         containerStickPromoGift.isHidden = true
         setupPromoGiftContainers()
         
-        containerCoupon.layer.borderWidth = 1
-        containerCoupon.layer.borderColor = UIColor.blue50.cgColor
-        
         btnBack.setTitle("", for: .normal)
     }
     
     private func setupPromoGiftContainers() {
-        containerStickPromoGift.layer.borderWidth = 1
-        containerStickPromoGift.layer.borderColor = UIColor.blue50.cgColor
         containerStickPromoGift.layer.shadowOpacity = 0.15
         containerStickPromoGift.layer.shadowOffset = CGSize(width: 0, height: 5)
         containerStickPromoGift.layer.shadowRadius = 3
-        containerInsideStickPromoGift.layer.cornerRadius = 14
-        
-        containerPromoGift.layer.cornerRadius = 8
-        containerInsidePromoGift.layer.cornerRadius = 14
     }
     
     private func setupLoadingView() {

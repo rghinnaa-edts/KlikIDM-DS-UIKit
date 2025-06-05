@@ -33,27 +33,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lb-VS-FaF">
-                                <rect key="frame" x="63" y="135" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Chip"/>
-                                <connections>
-                                    <action selector="GoToChip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSI-Cz-Ur6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-MQ-Ucc">
-                                <rect key="frame" x="237" y="135" width="95" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="CartPage"/>
-                                <connections>
-                                    <action selector="GoToCartPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZe-pO-VmE"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZE-2n-XeO">
+                                <rect key="frame" x="0.0" y="103" width="393" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lb-VS-FaF">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Chip"/>
+                                        <connections>
+                                            <action selector="GoToChip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSI-Cz-Ur6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-MQ-Ucc">
+                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CartPage"/>
+                                        <connections>
+                                            <action selector="GoToCartPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZe-pO-VmE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc8-5r-6jd">
+                                <rect key="frame" x="0.0" y="161.33333333333334" width="393" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bm-zm-DcG">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modal"/>
+                                        <connections>
+                                            <action selector="GoToModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG6-OD-Ucy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkO-yh-baO">
+                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fullscreen Modal"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ISo-hc-ZL6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ISo-hc-ZL6" firstAttribute="trailing" secondItem="6ZE-2n-XeO" secondAttribute="trailing" id="5xD-7w-nH1"/>
+                            <constraint firstItem="yc8-5r-6jd" firstAttribute="leading" secondItem="ISo-hc-ZL6" secondAttribute="leading" id="PQb-F8-oyW"/>
+                            <constraint firstItem="yc8-5r-6jd" firstAttribute="top" secondItem="6ZE-2n-XeO" secondAttribute="bottom" constant="24" id="S6X-Ec-B4H"/>
+                            <constraint firstItem="6ZE-2n-XeO" firstAttribute="top" secondItem="ISo-hc-ZL6" secondAttribute="top" id="v8x-xS-Voz"/>
+                            <constraint firstItem="ISo-hc-ZL6" firstAttribute="trailing" secondItem="yc8-5r-6jd" secondAttribute="trailing" id="xLv-lX-9IH"/>
+                            <constraint firstItem="6ZE-2n-XeO" firstAttribute="leading" secondItem="ISo-hc-ZL6" secondAttribute="leading" id="xU5-Xa-6zf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fcS-oE-d6a"/>
                 </viewController>

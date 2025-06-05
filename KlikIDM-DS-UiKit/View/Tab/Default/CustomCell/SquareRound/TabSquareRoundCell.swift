@@ -1,5 +1,5 @@
 //
-//  ChipPromo.swift
+//  TabSquareRoundCell.swift
 //  KlikIDM-DS-UiKit
 //
 //  Created by Rizka Ghinna Auliya on 09/05/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChipPromoCell: UICollectionViewCell {
+class TabSquareRoundCell: UICollectionViewCell {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var vChip: UIView!
@@ -34,14 +34,14 @@ class ChipPromoCell: UICollectionViewCell {
     
     private func setupChipPromo() {
         let bundle = Bundle(for: type(of: self))
-        if let nib = bundle.loadNibNamed("ChipPromoCell", owner: self, options: nil),
+        if let nib = bundle.loadNibNamed("TabSquareRoundCell", owner: self, options: nil),
            let view = nib.first as? UIView {
             containerView = view
             addSubview(containerView)
             containerView.frame = bounds
             containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         } else {
-            print("Failed to load ChipPromo nib")
+            print("Failed to load TabSquareRoundCell nib")
         }
         
         setupUI()
@@ -69,26 +69,10 @@ class ChipPromoCell: UICollectionViewCell {
         }
     }
     
-    func loadData(data: ChipPromoModel) {
+    func loadData(data: TabSquareRoundModel) {
         lblTitle.text = data.title
-        isEnable = data.isEnable
         
         setupBackground(isEnable: isEnable)
     }
     
-}
-
-extension ChipPromoCell: ChipCellProtocol {
-    func loadData(item: ChipModelProtocol) {
-        if let customData = item as? ChipPromoModel {
-            loadData(data: customData)
-        } else {
-            let customData = ChipPromoModel(
-                id: item.id,
-                title: "",
-                isEnable: false
-            )
-            loadData(data: customData)
-        }
-    }
 }
