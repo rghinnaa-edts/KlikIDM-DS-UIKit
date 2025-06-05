@@ -11,6 +11,12 @@ class Skeleton: UIView {
     private let gradientLayer = CAGradientLayer()
     private let shimmerAnimation: CABasicAnimation
     
+    @IBInspectable var cornerRadius: CGFloat = 8.0 {
+        didSet {
+            updateCornerRadius()
+        }
+    }
+    
     override init(frame: CGRect) {
         shimmerAnimation = CABasicAnimation(keyPath: "locations")
         shimmerAnimation.fromValue = [-1.0, -0.5, 0.0]
@@ -20,6 +26,7 @@ class Skeleton: UIView {
         
         super.init(frame: frame)
         setupGradient()
+        updateCornerRadius()
     }
     
     required init?(coder: NSCoder) {
@@ -31,6 +38,7 @@ class Skeleton: UIView {
         
         super.init(coder: coder)
         setupGradient()
+        updateCornerRadius()
     }
     
     private func setupGradient() {
@@ -47,9 +55,16 @@ class Skeleton: UIView {
         gradientLayer.add(shimmerAnimation, forKey: "shimmerAnimation")
     }
     
+    private func updateCornerRadius() {
+        layer.cornerRadius = cornerRadius
+        layer.masksToBounds = true
+        gradientLayer.cornerRadius = cornerRadius
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         gradientLayer.frame = bounds
+        updateCornerRadius()
     }
     
     func startShimmer() {
