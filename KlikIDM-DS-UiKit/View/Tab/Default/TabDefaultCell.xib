@@ -14,42 +14,22 @@
             <connections>
                 <outlet property="containerView" destination="0O9-16-nBF" id="EOb-bW-ho5"/>
                 <outlet property="lblTab" destination="kfd-sx-Oju" id="jN1-MQ-7L7"/>
-                <outlet property="lblTotal" destination="ElX-Gk-Ac6" id="yh3-T3-DZb"/>
                 <outlet property="vIndicator" destination="2Lj-Z4-LJC" id="aWh-E3-D2V"/>
-                <outlet property="vTotal" destination="RvL-1P-6fF" id="fcj-zB-5t3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="0O9-16-nBF">
-            <rect key="frame" x="0.0" y="0.0" width="110" height="69"/>
+            <rect key="frame" x="0.0" y="0.0" width="87" height="69"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hadiah Produk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-sx-Oju">
-                    <rect key="frame" x="0.0" y="8" width="86.666666666666671" height="19"/>
+                    <rect key="frame" x="0.0" y="4" width="87" height="23"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                     <color key="textColor" name="Blue-50"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-1P-6fF">
-                    <rect key="frame" x="90.666666666666671" y="9.6666666666666643" width="16" height="16"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-Gk-Ac6">
-                            <rect key="frame" x="4.6666666666666572" y="2" width="6.6666666666666679" height="12"/>
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
-                            <color key="textColor" name="White"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" name="Blue-50"/>
-                    <constraints>
-                        <constraint firstItem="ElX-Gk-Ac6" firstAttribute="centerX" secondItem="RvL-1P-6fF" secondAttribute="centerX" id="0Ph-GS-Tor"/>
-                        <constraint firstAttribute="height" constant="16" id="9aP-dy-i6M"/>
-                        <constraint firstItem="ElX-Gk-Ac6" firstAttribute="centerY" secondItem="RvL-1P-6fF" secondAttribute="centerY" id="H9t-kt-4o7"/>
-                        <constraint firstAttribute="width" constant="16" id="OUK-Rz-QHd"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lj-Z4-LJC">
-                    <rect key="frame" x="0.0" y="33" width="86.666666666666671" height="2"/>
+                    <rect key="frame" x="0.0" y="33" width="87" height="2"/>
                     <color key="backgroundColor" name="Blue-50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="jkM-xz-eJV"/>
@@ -59,25 +39,21 @@
             <viewLayoutGuide key="safeArea" id="XRL-1H-kHD"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="RvL-1P-6fF" firstAttribute="leading" secondItem="kfd-sx-Oju" secondAttribute="trailing" constant="4" id="6FX-cA-ITv"/>
                 <constraint firstItem="2Lj-Z4-LJC" firstAttribute="trailing" secondItem="kfd-sx-Oju" secondAttribute="trailing" id="Ehh-mf-8JN"/>
                 <constraint firstItem="XRL-1H-kHD" firstAttribute="bottom" secondItem="2Lj-Z4-LJC" secondAttribute="bottom" id="FUh-Wy-YxA"/>
                 <constraint firstItem="2Lj-Z4-LJC" firstAttribute="leading" secondItem="0O9-16-nBF" secondAttribute="leading" id="GG2-oY-ex3"/>
-                <constraint firstItem="ElX-Gk-Ac6" firstAttribute="centerY" secondItem="kfd-sx-Oju" secondAttribute="centerY" id="Oej-fT-drA"/>
-                <constraint firstItem="kfd-sx-Oju" firstAttribute="top" secondItem="0O9-16-nBF" secondAttribute="top" constant="8" id="lPe-Pl-Nmw"/>
+                <constraint firstAttribute="trailing" secondItem="kfd-sx-Oju" secondAttribute="trailing" id="iYM-Dm-JiG"/>
+                <constraint firstItem="kfd-sx-Oju" firstAttribute="top" secondItem="0O9-16-nBF" secondAttribute="top" constant="4" id="lPe-Pl-Nmw"/>
                 <constraint firstItem="kfd-sx-Oju" firstAttribute="leading" secondItem="0O9-16-nBF" secondAttribute="leading" id="lzP-XR-4io"/>
                 <constraint firstItem="2Lj-Z4-LJC" firstAttribute="top" secondItem="kfd-sx-Oju" secondAttribute="bottom" constant="6" id="sak-pc-qnV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-6.1068702290076331" y="-72.183098591549296"/>
+            <point key="canvasLocation" x="-23.664122137404579" y="-72.183098591549296"/>
         </view>
     </objects>
     <resources>
         <namedColor name="Blue-50">
             <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="White">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

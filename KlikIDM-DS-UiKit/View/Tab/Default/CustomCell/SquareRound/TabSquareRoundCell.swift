@@ -86,7 +86,7 @@ extension ChipPromoCell: ChipCellProtocol {
             let customData = ChipPromoModel(
                 id: item.id,
                 title: "",
-                isEnable: item.isEnable
+                isEnable: false
             )
             loadData(data: customData)
         }

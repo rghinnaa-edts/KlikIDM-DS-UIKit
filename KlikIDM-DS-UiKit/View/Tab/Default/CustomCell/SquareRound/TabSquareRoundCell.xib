@@ -33,8 +33,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-GD-14C">
                     <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Dolor" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1r-ex-Qj7">
-                            <rect key="frame" x="4" y="4" width="82" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Dolor" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1r-ex-Qj7">
+                            <rect key="frame" x="6" y="8" width="78" height="24"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                             <color key="textColor" name="Grey-50"/>
                             <nil key="highlightedColor"/>
@@ -43,10 +43,10 @@
                     <color key="backgroundColor" name="Blue-20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="1Ha-ma-t8e"/>
-                        <constraint firstItem="t1r-ex-Qj7" firstAttribute="top" secondItem="FhQ-GD-14C" secondAttribute="top" constant="4" id="43z-5q-rQu"/>
+                        <constraint firstItem="t1r-ex-Qj7" firstAttribute="top" secondItem="FhQ-GD-14C" secondAttribute="top" constant="8" id="43z-5q-rQu"/>
                         <constraint firstAttribute="height" constant="40" id="GTo-xq-d4t"/>
-                        <constraint firstAttribute="trailing" secondItem="t1r-ex-Qj7" secondAttribute="trailing" constant="4" id="b0M-nl-zIq"/>
-                        <constraint firstItem="t1r-ex-Qj7" firstAttribute="leading" secondItem="FhQ-GD-14C" secondAttribute="leading" constant="4" id="o1w-RO-cAg"/>
+                        <constraint firstAttribute="trailing" secondItem="t1r-ex-Qj7" secondAttribute="trailing" constant="6" id="b0M-nl-zIq"/>
+                        <constraint firstItem="t1r-ex-Qj7" firstAttribute="leading" secondItem="FhQ-GD-14C" secondAttribute="leading" constant="6" id="o1w-RO-cAg"/>
                     </constraints>
                 </view>
             </subviews>

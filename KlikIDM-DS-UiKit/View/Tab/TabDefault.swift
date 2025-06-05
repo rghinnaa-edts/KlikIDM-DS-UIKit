@@ -27,6 +27,16 @@ class Chip: UIView {
     }
     var currentlySelectedBucketId: String? = nil
     
+    private var width: CGFloat = 0
+    private var height: CGFloat = 0
+    private var itemSpacing: CGFloat = 0
+    private var leadingPadding: CGFloat = 16
+    private var trailingPadding: CGFloat = 16
+    private var topPadding: CGFloat = 0
+    private var bottomPadding: CGFloat = 0
+    
+    private var useDynamicWidth: Bool = false
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupChip()
@@ -44,7 +54,7 @@ class Chip: UIView {
     }
 
     private func setupChip() {
-        if let nib = Bundle.main.loadNibNamed("Chip", owner: self, options: nil),
+        if let nib = Bundle.main.loadNibNamed("TabDefault", owner: self, options: nil),
            let card = nib.first as? UIView {
             containerView = card
             containerView.frame = bounds
@@ -53,7 +63,7 @@ class Chip: UIView {
             
             setupUI()
         } else {
-            print("Failed to load Chip XIB")
+            print("Failed to load TabDefault XIB")
         }
     }
     
@@ -68,10 +78,14 @@ class Chip: UIView {
     private func setupChipView() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
-        flowLayout.minimumInteritemSpacing = 12
-        flowLayout.minimumLineSpacing = 12
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        flowLayout.minimumLineSpacing = itemSpacing
+        flowLayout.sectionInset = UIEdgeInsets(top: topPadding, left: leadingPadding, bottom: bottomPadding, right: trailingPadding)
+//        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        
+        if useDynamicWidth {
+            flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        }
+        
         collectionView.collectionViewLayout = flowLayout
         collectionView.backgroundColor = .clear
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -93,6 +107,21 @@ class Chip: UIView {
         self.data = chipData
     }
     
+    func setSize(width: CGFloat, height: CGFloat) {
+        self.width = width
+        self.height = height
+    }
+    
+    func setItemPadding(topPadding: CGFloat = 0, leadingPadding: CGFloat = 16, bottomPadding: CGFloat = 0, trailingPadding: CGFloat = 16, itemSpacing: CGFloat) {
+        self.itemSpacing = itemSpacing
+        self.topPadding = topPadding
+        self.leadingPadding = leadingPadding
+        self.bottomPadding = bottomPadding
+        self.trailingPadding = trailingPadding
+        
+        setupUI()
+    }
+    
     func selectDefaultChip() {
         guard !data.isEmpty else { return }
                 
@@ -109,6 +138,12 @@ class Chip: UIView {
             
             cell.isSelectedState = true
         }
+        
+        if useDynamicWidth {
+            DispatchQueue.main.async {
+                self.collectionView.performBatchUpdates(nil, completion: nil)
+            }
+        }
     }
     
 }
@@ -119,7 +154,6 @@ protocol ChipDelegate: AnyObject {
 
 protocol ChipModelProtocol {
     var id: String { get }
-    var isEnable: Bool { get }
 }
 
 protocol ChipCellProtocol: UICollectionViewCell {
@@ -148,8 +182,9 @@ extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = 90
-        let height = 48
+        if useDynamicWidth {
+            return CGSize.zero
+        }
         
         return CGSize(width: width, height: height)
     }
@@ -168,6 +203,12 @@ extension Chip: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
         
         let selectedData = data[indexPath.item].id
         currentlySelectedBucketId = selectedData
+        
+        if useDynamicWidth {
+            UIView.animate(withDuration: 0.3) {
+                self.collectionView.performBatchUpdates(nil, completion: nil)
+            }
+        }
         
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let cellFrame = flowLayout.layoutAttributesForItem(at: indexPath)?.frame ?? .zero
