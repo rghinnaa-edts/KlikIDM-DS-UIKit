@@ -264,6 +264,7 @@ extension TabQuadRound: UICollectionViewDelegate, UICollectionViewDataSource, UI
 
         let isEqualWidthMode = shouldUseEqualWidth()
         cell.shouldUseEqualWidth = isEqualWidthMode
+        cell.totalTabCount = data.count
 
         if isEqualWidthMode {
             let equalWidth = calculateEqualWidthWithPadding()

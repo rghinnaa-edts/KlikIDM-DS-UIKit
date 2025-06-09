@@ -19,10 +19,10 @@ class TabQuadRoundCell: UICollectionViewCell {
     
     @IBOutlet var vWidthConstraint: NSLayoutConstraint!
     @IBOutlet var vHeightConstraint: NSLayoutConstraint!
-  
     
     var shouldUseEqualWidth: Bool = false
     var customWidth: CGFloat = 86
+    var totalTabCount: Int = 0
 
     var isSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
     var isBeforeSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
@@ -133,23 +133,36 @@ class TabQuadRoundCell: UICollectionViewCell {
 
     private func beforeSelectedFixedTab() {
         vTab.backgroundColor = UIColor.blue20
-        setupCornerMask(for: vTab, corners: [.layerMaxXMaxYCorner])
-        setupCornerMask(for: vShadow, corners: [.layerMaxXMaxYCorner])
         vTabBackground.backgroundColor = UIColor.white
         addInnerBottomShadow(with: .layerMaxXMaxYCorner)
+        
+        if totalTabCount == 2 {
+            setupCornerMask(for: vTab, corners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+            setupCornerMask(for: vShadow, corners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+        } else {
+            setupCornerMask(for: vTab, corners: [.layerMaxXMaxYCorner])
+            setupCornerMask(for: vShadow, corners: [.layerMaxXMaxYCorner])
+        }
     }
 
     private func afterSelectedFixedTab() {
         vTab.backgroundColor = UIColor.blue20
-        setupCornerMask(for: vTab, corners: [.layerMinXMaxYCorner])
-        setupCornerMask(for: vShadow, corners: [.layerMinXMaxYCorner])
         vTabBackground.backgroundColor = UIColor.white
         addInnerBottomShadow(with: .layerMinXMaxYCorner)
+        
+        if totalTabCount == 2 {
+            setupCornerMask(for: vTab, corners: [.layerMinXMaxYCorner, .layerMaxXMinYCorner])
+            setupCornerMask(for: vShadow, corners: [.layerMinXMaxYCorner, .layerMaxXMinYCorner])
+        } else {
+            setupCornerMask(for: vTab, corners: [.layerMinXMaxYCorner])
+            setupCornerMask(for: vShadow, corners: [.layerMinXMaxYCorner])
+        }
     }
 
     private func unselectedFixedTab() {
         lblTab.font = UIFont.systemFont(ofSize: 10, weight: .medium)
         vTab.backgroundColor = UIColor.blue20
+        vTabBackground.backgroundColor = UIColor.blue20
         vHeightConstraint.constant = Constants.unselectedHeight
         setupCornerMask(for: vTab, corners: [])
         setupCornerMask(for: vShadow, corners: [])
@@ -247,16 +260,24 @@ class TabQuadRoundCell: UICollectionViewCell {
             self.layoutIfNeeded()
         }
     }
-
+    
     private func setupFirstLastCorner() {
-        if isFirstItem && isLastItem {
-            setupCornerMask(for: vTabBackground, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
-        } else if isFirstItem {
-            setupCornerMask(for: vTabBackground, corners: [.layerMinXMinYCorner])
-        } else if isLastItem {
-            setupCornerMask(for: vTabBackground, corners: [.layerMaxXMinYCorner])
+        if totalTabCount == 2 {
+            if isFirstItem {
+                setupCornerMask(for: vTabBackground, corners: [.layerMinXMinYCorner])
+            } else if isLastItem {
+                setupCornerMask(for: vTabBackground, corners: [.layerMaxXMinYCorner])
+            }
         } else {
-            setupCornerMask(for: vTabBackground, corners: [])
+            if isFirstItem && isLastItem {
+                setupCornerMask(for: vTabBackground, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
+            } else if isFirstItem {
+                setupCornerMask(for: vTabBackground, corners: [.layerMinXMinYCorner])
+            } else if isLastItem {
+                setupCornerMask(for: vTabBackground, corners: [.layerMaxXMinYCorner])
+            } else {
+                setupCornerMask(for: vTabBackground, corners: [])
+            }
         }
     }
 
