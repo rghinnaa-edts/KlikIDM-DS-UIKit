@@ -31,6 +31,5 @@ class ViewController: UIViewController {
         let vc = UIStoryboard(name: "CartViewController", bundle: nil).instantiateViewController(withIdentifier: "CartPage")
         navigationController?.pushViewController(vc, animated: true)
     }
-
 }
 

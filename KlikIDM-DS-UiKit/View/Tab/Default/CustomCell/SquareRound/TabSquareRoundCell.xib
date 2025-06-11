@@ -18,8 +18,8 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" ambiguous="YES" id="dFX-mr-4HO">
-            <rect key="frame" x="0.0" y="0.0" width="90" height="56"/>
+        <view contentMode="scaleToFill" id="dFX-mr-4HO">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="48"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dr-bP-uav">
@@ -53,7 +53,6 @@
             <viewLayoutGuide key="safeArea" id="vwJ-LL-raU"/>
             <color key="backgroundColor" name="White"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="8Dr-bP-uav" secondAttribute="bottom" id="C28-eb-P5l"/>
                 <constraint firstItem="8Dr-bP-uav" firstAttribute="top" secondItem="FhQ-GD-14C" secondAttribute="bottom" constant="6" id="ad8-vG-Yrs"/>
                 <constraint firstItem="8Dr-bP-uav" firstAttribute="leading" secondItem="vwJ-LL-raU" secondAttribute="leading" id="fx6-vC-140"/>
                 <constraint firstItem="8Dr-bP-uav" firstAttribute="trailing" secondItem="vwJ-LL-raU" secondAttribute="trailing" id="lXh-pq-X7X"/>
@@ -62,7 +61,7 @@
                 <constraint firstAttribute="trailing" secondItem="FhQ-GD-14C" secondAttribute="trailing" id="zS4-3Z-7Iw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="29.007633587786259" y="-485.21126760563385"/>
+            <point key="canvasLocation" x="29.007633587786259" y="-488.02816901408454"/>
         </view>
     </objects>
     <resources>
