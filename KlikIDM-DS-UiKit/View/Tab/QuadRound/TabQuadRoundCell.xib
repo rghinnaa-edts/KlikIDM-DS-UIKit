@@ -62,7 +62,7 @@
                                             <color key="textColor" name="Grey-50"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FhN-dH-cC8">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhN-dH-cC8">
                                             <rect key="frame" x="36" y="0.0" width="14" height="14"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE4-u3-2Um">
@@ -90,6 +90,7 @@
                                     <constraints>
                                         <constraint firstItem="trD-hx-98F" firstAttribute="top" secondItem="k20-sG-hss" secondAttribute="top" id="2E5-8X-Zkp"/>
                                         <constraint firstItem="FhN-dH-cC8" firstAttribute="leading" secondItem="trD-hx-98F" secondAttribute="trailing" constant="4" id="Rvq-ET-l0W"/>
+                                        <constraint firstItem="FhN-dH-cC8" firstAttribute="top" secondItem="trD-hx-98F" secondAttribute="top" id="ai2-Cc-rnL"/>
                                         <constraint firstItem="trD-hx-98F" firstAttribute="leading" secondItem="k20-sG-hss" secondAttribute="leading" id="ul6-ld-UgF"/>
                                         <constraint firstAttribute="bottom" secondItem="trD-hx-98F" secondAttribute="bottom" id="y4q-bX-Ud8"/>
                                         <constraint firstAttribute="trailing" secondItem="FhN-dH-cC8" secondAttribute="trailing" id="z2Y-NY-Ff7"/>

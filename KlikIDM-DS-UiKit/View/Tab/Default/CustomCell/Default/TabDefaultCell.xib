@@ -19,17 +19,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="0O9-16-nBF">
-            <rect key="frame" x="0.0" y="0.0" width="87" height="69"/>
+            <rect key="frame" x="0.0" y="0.0" width="87" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hadiah Produk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-sx-Oju">
-                    <rect key="frame" x="0.0" y="8" width="87" height="19"/>
+                    <rect key="frame" x="0.0" y="8" width="87" height="14"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                     <color key="textColor" name="Blue-50"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lj-Z4-LJC">
-                    <rect key="frame" x="0.0" y="33" width="87" height="2"/>
+                    <rect key="frame" x="0.0" y="28" width="87" height="2"/>
                     <color key="backgroundColor" name="Blue-50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="jkM-xz-eJV"/>
@@ -48,7 +48,7 @@
                 <constraint firstItem="2Lj-Z4-LJC" firstAttribute="top" secondItem="kfd-sx-Oju" secondAttribute="bottom" constant="6" id="sak-pc-qnV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-23.664122137404579" y="-72.183098591549296"/>
+            <point key="canvasLocation" x="-23.664122137404579" y="-73.943661971830991"/>
         </view>
     </objects>
     <resources>
