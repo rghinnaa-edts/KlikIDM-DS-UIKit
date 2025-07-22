@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "6.2"
   
   spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git", :tag => spec.version.to_s }
-  spec.source_files = "Sources/**/*"
+  spec.source_files = "KlikIDM-DS-UiKit/**/*"
   
   spec.framework    = "UIKit"
 end
