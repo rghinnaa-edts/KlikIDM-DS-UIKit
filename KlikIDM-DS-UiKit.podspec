@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = "KlikIDM-DS-UiKit"
   spec.version      = "1.0.0"
-  spec.summary      = "UI Components and Animation of Klik Indomaret Apps"
+  spec.summary      = "UI Components and Animation"
   spec.description  = "UI Components and Animation of Klik Indomaret Apps"
   
   spec.homepage     = "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit"
@@ -12,8 +12,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "6.2"
   
   spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git", :tag => spec.version.to_s }
-  spec.source_files = "KlikIDM-DS-UiKit/Classes/**/*"
-  spec.resources = "KlikIDM-DS-UiKit/Assets/**/*"
+  spec.source_files = "Sources/**/*"
   
   spec.framework    = "UIKit"
 end
