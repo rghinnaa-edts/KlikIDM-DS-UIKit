@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git", :tag => spec.version.to_s }
   spec.source_files = "KlikIDM-DS-UiKit/**/*.{h,m,swift}"
+  spec.exclude_files = "KlikIDM-DS-UiKit/**/*.xcassets"
   
   spec.framework    = "UIKit"
 end
