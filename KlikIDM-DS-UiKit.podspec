@@ -1,10 +1,3 @@
-//
-//  KlikIDM-DS-UiKit.podspec
-//  KlikIDM-DS-UiKit
-//
-//  Created by Rizka Ghinna Auliya on 17/07/25.
-//
-
 Pod::Spec.new do |spec|
   spec.name         = "KlikIDM-DS-UiKit"
   spec.version      = "1.0.0"
@@ -18,8 +11,8 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.swift_version = "6.2"
   
-  spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git", :tag => "#{1.0.0}" }
-  spec.source_files = "KlikIDM-DS-UiKit/KlikIDM-DS-UiKit/**/*"
+  spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git", :tag => s.version }
+  spec.source_files = "Sources/**/*.{swift,h}"
   
   spec.framework    = "UIKit"
 end
