@@ -1,0 +1,26 @@
+{
+  "name": "KlikIDM-DS-UiKit",
+  "version": "1.0.0",
+  "summary": "This project focuses on integrating a library into the Klik IDM App (Klik Indomaret) to streamline dependency management and enhance application functionalities.",
+  "description": "The Klik Indomaret serving as the digital arm of the vast Indomaret retail chain. This library is designed to be used as a dependency in your application to streamline the integration process for Klik Indomaret App.",
+  "homepage": "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rizka Ghinna": "rizka.ghinna@sg-dsa.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "6.2",
+  "source": {
+    "git": "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "KlikIDM-DS-UiKit/Classes/**/*",
+  "resources": "KlikIDM-DS-UiKit/Assets/**/*",
+  "frameworks": "UIKit",
+  "swift_version": "6.2"
+}

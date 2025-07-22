@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 32173FD89F022DA1086A29EE64337BE8 /* Build configuration list for PBXAggregateTarget "KlikIDM-DS-UiKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "KlikIDM-DS-UiKit";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		26F73A942E624092B034D16200756D48 /* Pods-KlikIDM-DS-UiKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5063CF39C0373336CBC4F19F2271FB27 /* Pods-KlikIDM-DS-UiKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */; };
+		5B4F20F25FA2BA75625282F9B1F5163D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A6539DC3C3AA9E9478978580235A9D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725DF6960E37D119B7C8F5183EDD7562;
+			remoteInfo = "KlikIDM-DS-UiKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5E413671257866DBD2939AF12C0E3F3A /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KlikIDM-DS-UiKit-umbrella.h"; sourceTree = "<group>"; };
+		824DD9227B853B3AB7D6B1E5986D8D75 /* KlikIDM-DS-UiKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "KlikIDM-DS-UiKit.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		82DD4430F50F511DF51487C75100A0B5 /* Pods-KlikIDM-DS-UiKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KlikIDM-DS-UiKit.modulemap"; sourceTree = "<group>"; };
+		8867E523610332563B42713244A4C3EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
+		8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A69E05BE8A3EC0EC86FF2A555B97518C /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
+		CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KlikIDM-DS-UiKit"; path = Pods_KlikIDM_DS_UiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B4C1AECBC7598F67C2D3F125437BCE /* Pods-KlikIDM-DS-UiKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-Info.plist"; sourceTree = "<group>"; };
+		DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KlikIDM-DS-UiKit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6248AA277C7DB6D5C45563F2605CB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4F20F25FA2BA75625282F9B1F5163D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13532751067A2B38D5BCAFF07F2A5906 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B27F521CB8C4E8CE6796C60A1C374355 /* Pods-KlikIDM-DS-UiKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4FA4619A08A14C93B3CC220D81766E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E0DDD568F1008227A5EAFACA57DA9AD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				824DD9227B853B3AB7D6B1E5986D8D75 /* KlikIDM-DS-UiKit.podspec */,
+				8867E523610332563B42713244A4C3EF /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B27F521CB8C4E8CE6796C60A1C374355 /* Pods-KlikIDM-DS-UiKit */ = {
+			isa = PBXGroup;
+			children = (
+				82DD4430F50F511DF51487C75100A0B5 /* Pods-KlikIDM-DS-UiKit.modulemap */,
+				A69E05BE8A3EC0EC86FF2A555B97518C /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */,
+				5E413671257866DBD2939AF12C0E3F3A /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */,
+				DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */,
+				D5B4C1AECBC7598F67C2D3F125437BCE /* Pods-KlikIDM-DS-UiKit-Info.plist */,
+				7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */,
+				3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */,
+				88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */,
+			);
+			name = "Pods-KlikIDM-DS-UiKit";
+			path = "Target Support Files/Pods-KlikIDM-DS-UiKit";
+			sourceTree = "<group>";
+		};
+		BA384D17C7554EDB9E40C97100F381AE /* KlikIDM-DS-UiKit */ = {
+			isa = PBXGroup;
+			children = (
+				9E0DDD568F1008227A5EAFACA57DA9AD /* Pod */,
+				C06EE20792596E03813F78F31E8A329F /* Support Files */,
+			);
+			name = "KlikIDM-DS-UiKit";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C06EE20792596E03813F78F31E8A329F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */,
+				B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/KlikIDM-DS-UiKit";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E46D6C036445351F5D5CFAD9717DF2AD /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4FA4619A08A14C93B3CC220D81766E8F /* Products */,
+				13532751067A2B38D5BCAFF07F2A5906 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E46D6C036445351F5D5CFAD9717DF2AD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA384D17C7554EDB9E40C97100F381AE /* KlikIDM-DS-UiKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DF0C16E7D493E67D536CDAC2CB46D3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F73A942E624092B034D16200756D48 /* Pods-KlikIDM-DS-UiKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE573859A487A480E1532F3EAFFED2C1 /* Pods-KlikIDM-DS-UiKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11031FF70E33DA038874D4D635343B83 /* Build configuration list for PBXNativeTarget "Pods-KlikIDM-DS-UiKit" */;
+			buildPhases = (
+				2DF0C16E7D493E67D536CDAC2CB46D3C /* Headers */,
+				F3B333202CAF0AFBB85168C339EA0377 /* Sources */,
+				A6248AA277C7DB6D5C45563F2605CB05 /* Frameworks */,
+				348AD84BEA834874E67D3757BD12C9DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F46F79CC31DB3F28C503FDAF7F2A4F3E /* PBXTargetDependency */,
+			);
+			name = "Pods-KlikIDM-DS-UiKit";
+			productName = Pods_KlikIDM_DS_UiKit;
+			productReference = CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4FA4619A08A14C93B3CC220D81766E8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */,
+				BE573859A487A480E1532F3EAFFED2C1 /* Pods-KlikIDM-DS-UiKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		348AD84BEA834874E67D3757BD12C9DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B333202CAF0AFBB85168C339EA0377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5063CF39C0373336CBC4F19F2271FB27 /* Pods-KlikIDM-DS-UiKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F46F79CC31DB3F28C503FDAF7F2A4F3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KlikIDM-DS-UiKit";
+			target = 725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */;
+			targetProxy = 5A6539DC3C3AA9E9478978580235A9D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D71417E7954DC28B3F3C51CF0A4616F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5DFD54A0F888F316620D9B7DEF530EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA0AE3AA10AA4890D3FBADC0A0FF8244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F744FF9DC9248494584F63801AE2746C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11031FF70E33DA038874D4D635343B83 /* Build configuration list for PBXNativeTarget "Pods-KlikIDM-DS-UiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DFD54A0F888F316620D9B7DEF530EC /* Debug */,
+				D71417E7954DC28B3F3C51CF0A4616F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32173FD89F022DA1086A29EE64337BE8 /* Build configuration list for PBXAggregateTarget "KlikIDM-DS-UiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0AE3AA10AA4890D3FBADC0A0FF8244 /* Debug */,
+				F744FF9DC9248494584F63801AE2746C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

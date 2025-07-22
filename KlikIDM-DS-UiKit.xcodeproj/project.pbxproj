@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5079E64A2E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */; };
 		5079E68A2E2F7AB800315031 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6892E2F7AB000315031 /* LICENSE */; };
+		867E983964E0FEC5A3021467 /* Pods_KlikIDM_DS_UiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA592930C4F4DC4A5CE9DC3 /* Pods_KlikIDM_DS_UiKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 		50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KlikIDM-DS-UiKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA592930C4F4DC4A5CE9DC3 /* Pods_KlikIDM_DS_UiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikIDM_DS_UiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9908B534A8DF41E9D510079C /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS-UiKit.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		F10BD1A65D4978143B468942 /* Pods-KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS-UiKit.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -57,11 +61,15 @@
 		};
 		50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "KlikIDM-DS-UiKitTests";
 			sourceTree = "<group>";
 		};
 		50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "KlikIDM-DS-UiKitUITests";
 			sourceTree = "<group>";
 		};
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867E983964E0FEC5A3021467 /* Pods_KlikIDM_DS_UiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A58A9A1397252AEA3AA5436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA592930C4F4DC4A5CE9DC3 /* Pods_KlikIDM_DS_UiKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50CA6D952D6EE80000CC7FBC = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,8 @@
 				50CA6D9F2D6EE80000CC7FBC /* Products */,
 				5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */,
 				5079E6892E2F7AB000315031 /* LICENSE */,
+				7FB339F4E0E2D4619C4C9CE3 /* Pods */,
+				2A58A9A1397252AEA3AA5436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +133,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7FB339F4E0E2D4619C4C9CE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9908B534A8DF41E9D510079C /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */,
+				F10BD1A65D4978143B468942 /* Pods-KlikIDM-DS-UiKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50CA6DC72D6EE80100CC7FBC /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKit" */;
 			buildPhases = (
+				4DE57541329DB38DE449650D /* [CP] Check Pods Manifest.lock */,
 				50CA6D9A2D6EE80000CC7FBC /* Sources */,
 				50CA6D9B2D6EE80000CC7FBC /* Frameworks */,
 				50CA6D9C2D6EE80000CC7FBC /* Resources */,
@@ -133,8 +163,6 @@
 				50CA6DA02D6EE80000CC7FBC /* KlikIDM-DS-UiKit */,
 			);
 			name = "KlikIDM-DS-UiKit";
-			packageProductDependencies = (
-			);
 			productName = "KlikIDM-DS-UiKit";
 			productReference = 50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */;
 			productType = "com.apple.product-type.application";
@@ -156,8 +184,6 @@
 				50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
 			);
 			name = "KlikIDM-DS-UiKitTests";
-			packageProductDependencies = (
-			);
 			productName = "KlikIDM-DS-UiKitTests";
 			productReference = 50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -179,8 +205,6 @@
 				50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
 			);
 			name = "KlikIDM-DS-UiKitUITests";
-			packageProductDependencies = (
-			);
 			productName = "KlikIDM-DS-UiKitUITests";
 			productReference = 50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -255,6 +279,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DE57541329DB38DE449650D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KlikIDM-DS-UiKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50CA6D9A2D6EE80000CC7FBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,6 +344,7 @@
 /* Begin XCBuildConfiguration section */
 		50CA6DC82D6EE80100CC7FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9908B534A8DF41E9D510079C /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,6 +374,7 @@
 		};
 		50CA6DC92D6EE80100CC7FBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10BD1A65D4978143B468942 /* Pods-KlikIDM-DS-UiKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

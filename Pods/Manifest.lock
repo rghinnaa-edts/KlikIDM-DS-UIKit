@@ -1,0 +1,16 @@
+PODS:
+  - KlikIDM-DS-UiKit (1.0.0)
+
+DEPENDENCIES:
+  - KlikIDM-DS-UiKit (from `../KlikIDM-DS-UiKit`)
+
+EXTERNAL SOURCES:
+  KlikIDM-DS-UiKit:
+    :path: "../KlikIDM-DS-UiKit"
+
+SPEC CHECKSUMS:
+  KlikIDM-DS-UiKit: aa34b8485dc46f748fc53e941ffb6b13e992a65d
+
+PODFILE CHECKSUM: 51c05a8fab02303178be7f538f08180c724f1090
+
+COCOAPODS: 1.16.2
