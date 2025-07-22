@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5079E64A2E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		50CA6DB52D6EE80100CC7FBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "KlikIDM-DS-UiKit.podspec"; sourceTree = "<group>"; };
 		50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KlikIDM-DS-UiKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +97,7 @@
 				50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
 				50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
 				50CA6D9F2D6EE80000CC7FBC /* Products */,
+				5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5079E64A2E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
