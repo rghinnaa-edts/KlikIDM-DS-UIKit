@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
   spec.name         = "KlikIDM-DS-UiKit"
   spec.version      = "1.0.0"
-  spec.summary      = "This project focuses on integrating a library into the Klik IDM App (Klik Indomaret) to streamline dependency management and enhance application functionalities."
-  spec.description  = "The Klik Indomaret serving as the digital arm of the vast Indomaret retail chain. This library is designed to be used as a dependency in your application to streamline the integration process for Klik Indomaret App."
+  spec.summary      = "UI Components and Animation of Klik Indomaret Apps"
+  spec.description  = "UI Components and Animation of Klik Indomaret Apps"
   
   spec.homepage     = "https://github.com/rghinnaa-edts/KlikIDM-DS-UIKit"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
