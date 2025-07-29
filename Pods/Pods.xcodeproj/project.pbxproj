@@ -6,26 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 32173FD89F022DA1086A29EE64337BE8 /* Build configuration list for PBXAggregateTarget "KlikIDM-DS-UiKit" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = "KlikIDM-DS-UiKit";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		26F73A942E624092B034D16200756D48 /* Pods-KlikIDM-DS-UiKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5063CF39C0373336CBC4F19F2271FB27 /* Pods-KlikIDM-DS-UiKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */; };
-		5B4F20F25FA2BA75625282F9B1F5163D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		0777893580341E2348F3FDE72D94F93F /* PromoGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386B08BC8BF3B318C33A49FDF568190 /* PromoGiftModel.swift */; };
+		0BBC3F6C47950ED13E4E189799EDD4E2 /* TabSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8950DD7E8B31B3C179009FE16C768160 /* TabSquareRoundModel.swift */; };
+		1ADE30EC7B18F53EC9004366C80A9780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C5B55586A46B37DF07F3D7E08B7A5 /* AppDelegate.swift */; };
+		23E1BED099B19A4E2BCD1D2A795B2F9E /* TabDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA2E42DDF2DC97598483EF1171C80C /* TabDefault.swift */; };
+		26F73A942E624092B034D16200756D48 /* Pods-KlikIDM-DS-UiKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F04A8D98F68D7717C610FDE860422D /* Pods-KlikIDM-DS-UiKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311D6B85F2383C8C10175B7D397A3C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97E6BE0B27DB7D70E6CE623190BDFDE /* Assets.xcassets */; };
+		5063CF39C0373336CBC4F19F2271FB27 /* Pods-KlikIDM-DS-UiKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5C9E8FBD9686D880500EA6C4B18C9 /* Pods-KlikIDM-DS-UiKit-dummy.m */; };
+		5B4F20F25FA2BA75625282F9B1F5163D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		6C3A208628B55A8B7C393C0713E1204D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		72BA91589A05A6C93A9B3A4C7CC4412B /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A605293FED128492423B8285A9E3804 /* Skeleton.swift */; };
+		79403FA60E3630A512C554DA04D911F7 /* PromoContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705527F38F26DEF460FB8E11DE2EB522 /* PromoContentModel.swift */; };
+		80F5684C80BC0FA0FAFA87551211A79E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A189CE39F9387F77182D8F827AC6DF /* Font.swift */; };
+		8255A3B859DEAD339A6B33B11B521380 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE51C29346775D4114CC8924C338B63 /* Button.swift */; };
+		88B44B795CA3F4C1D2784CE78F011A44 /* PromoGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA810D07F6540888E82BA443FD7D7DBB /* PromoGiftViewController.swift */; };
+		8C6F2753FEEB9D6F670DABF3A22FD206 /* KlikIDM-DS-UiKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F87D1B1BADA3AC1918FF5D9A99F594 /* KlikIDM-DS-UiKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90103F1DB0E7C75A4AEEB398EE678425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD561C9E7DD06465313968BC75A1E9F /* ViewController.swift */; };
+		93110BDBA522299BCA140F7B8F869D32 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED7B4997E2E30FCEF973A52C571C97 /* CartViewController.swift */; };
+		A8E003918F0BE353AE7B86CFACF5D05C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		B6C055A4EF4A212AFE2BD7ACB934DBFD /* TabQuadRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720A1E155FA5E3631E4A1AD6B476553 /* TabQuadRound.swift */; };
+		B7871DFD25D3C3D8455013573374CD31 /* TabDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E68F92ABE4283B628556991D56BFD4 /* TabDefaultModel.swift */; };
+		C301D5AA307D93803BDBFB6CB93113C0 /* KlikIDM-DS-UiKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A787328CC81D0C22F8CA2E143D48E3 /* KlikIDM-DS-UiKit-dummy.m */; };
+		C4AC0A9C412EF8A880DA9DC376CF6A7F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519D8D1C18E4E73E421792F7E41B492 /* Extension.swift */; };
+		CA4AFC0049BC1DAF874E58E6DA5C4974 /* TabQuadRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626621993EF315C57943A2558207421 /* TabQuadRoundCell.swift */; };
+		D992EB2F4F2900AC59EF0755710E0652 /* TabDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E0C610717D66F1CFD14048FEA231E /* TabDefaultCell.swift */; };
+		F32F36B13197F7A687877DC5C6E2B647 /* PromoContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD5BA076EF32E1125BFCD2450C04F /* PromoContentCell.swift */; };
+		FBF331258BA77323EB82565F368E962E /* TabSquareRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977988FD881FA4EDC1EF16149B55E841 /* TabSquareRoundCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5A6539DC3C3AA9E9478978580235A9D3 /* PBXContainerItemProxy */ = {
+		B93D47494C612F1F677DE56400D35B5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,24 +46,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
-		5E413671257866DBD2939AF12C0E3F3A /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.plist"; sourceTree = "<group>"; };
-		7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KlikIDM-DS-UiKit-umbrella.h"; sourceTree = "<group>"; };
-		824DD9227B853B3AB7D6B1E5986D8D75 /* KlikIDM-DS-UiKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "KlikIDM-DS-UiKit.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		82DD4430F50F511DF51487C75100A0B5 /* Pods-KlikIDM-DS-UiKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KlikIDM-DS-UiKit.modulemap"; sourceTree = "<group>"; };
-		8867E523610332563B42713244A4C3EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
-		8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		023FF3FEE87C4FBE6335F97A82245704 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0A545DA37FBD5BEECBB7B2763309525D /* Pods-KlikIDM-DS-UiKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KlikIDM-DS-UiKit-frameworks.sh"; sourceTree = "<group>"; };
+		0AA29F0D414DF9206E528854E9A39C8C /* KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
+		0CED7B4997E2E30FCEF973A52C571C97 /* CartViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		146C5B55586A46B37DF07F3D7E08B7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "KlikIDM-DS-UiKit/AppDelegate.swift"; sourceTree = "<group>"; };
+		1A605293FED128492423B8285A9E3804 /* Skeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
+		1EE51C29346775D4114CC8924C338B63 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		219B1F5808D8F9DA6DA33D399E55F219 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		330EA64734D26DABCB095826E0A288AF /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3626621993EF315C57943A2558207421 /* TabQuadRoundCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabQuadRoundCell.swift; sourceTree = "<group>"; };
+		4386B08BC8BF3B318C33A49FDF568190 /* PromoGiftModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromoGiftModel.swift; sourceTree = "<group>"; };
+		4519D8D1C18E4E73E421792F7E41B492 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4720A1E155FA5E3631E4A1AD6B476553 /* TabQuadRound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabQuadRound.swift; sourceTree = "<group>"; };
+		63F87D1B1BADA3AC1918FF5D9A99F594 /* KlikIDM-DS-UiKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KlikIDM-DS-UiKit-umbrella.h"; sourceTree = "<group>"; };
+		66B842B3AE03977715529DDB4C2DB1CD /* Pods-KlikIDM-DS-UiKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-Info.plist"; sourceTree = "<group>"; };
+		6A1AD5BA076EF32E1125BFCD2450C04F /* PromoContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromoContentCell.swift; sourceTree = "<group>"; };
+		705527F38F26DEF460FB8E11DE2EB522 /* PromoContentModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromoContentModel.swift; sourceTree = "<group>"; };
+		710E0C610717D66F1CFD14048FEA231E /* TabDefaultCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabDefaultCell.swift; sourceTree = "<group>"; };
+		71F04A8D98F68D7717C610FDE860422D /* Pods-KlikIDM-DS-UiKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KlikIDM-DS-UiKit-umbrella.h"; sourceTree = "<group>"; };
+		75A189CE39F9387F77182D8F827AC6DF /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7B6E23E381F944930D5DA2A0E20F7D98 /* KlikIDM-DS-UiKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KlikIDM-DS-UiKit-Info.plist"; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		84A1C21F5DC41D43A7A39790B10813C8 /* KlikIDM-DS-UiKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "KlikIDM-DS-UiKit.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8950DD7E8B31B3C179009FE16C768160 /* TabSquareRoundModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabSquareRoundModel.swift; sourceTree = "<group>"; };
+		977988FD881FA4EDC1EF16149B55E841 /* TabSquareRoundCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabSquareRoundCell.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A69E05BE8A3EC0EC86FF2A555B97518C /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
+		A1BA2E42DDF2DC97598483EF1171C80C /* TabDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabDefault.swift; sourceTree = "<group>"; };
+		AA894F39D31957DCA65AB3E2D317609A /* Pods-KlikIDM-DS-UiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.release.xcconfig"; sourceTree = "<group>"; };
+		B9E68F92ABE4283B628556991D56BFD4 /* TabDefaultModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabDefaultModel.swift; sourceTree = "<group>"; };
+		BA810D07F6540888E82BA443FD7D7DBB /* PromoGiftViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromoGiftViewController.swift; sourceTree = "<group>"; };
+		C31FABAD8E05CCEB4AA71AE4EC0066C2 /* KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0AC35866E96BB3830E6524FF80250D /* KlikIDM-DS-UiKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "KlikIDM-DS-UiKit"; path = KlikIDM_DS_UiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KlikIDM-DS-UiKit"; path = Pods_KlikIDM_DS_UiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B4C1AECBC7598F67C2D3F125437BCE /* Pods-KlikIDM-DS-UiKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-Info.plist"; sourceTree = "<group>"; };
-		DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KlikIDM-DS-UiKit-dummy.m"; sourceTree = "<group>"; };
+		D34C35F8A6D2C8ED5BB4E29436A6EA83 /* KlikIDM-DS-UiKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KlikIDM-DS-UiKit-prefix.pch"; sourceTree = "<group>"; };
+		D97E6BE0B27DB7D70E6CE623190BDFDE /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "KlikIDM-DS-UiKit/Asset/Assets.xcassets"; sourceTree = "<group>"; };
+		DDD561C9E7DD06465313968BC75A1E9F /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "KlikIDM-DS-UiKit/ViewController.swift"; sourceTree = "<group>"; };
+		DFE98BC20677ACEBE5FED7DAB9899BEA /* KlikIDM-DS-UiKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "KlikIDM-DS-UiKit.modulemap"; sourceTree = "<group>"; };
+		E1A787328CC81D0C22F8CA2E143D48E3 /* KlikIDM-DS-UiKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KlikIDM-DS-UiKit-dummy.m"; sourceTree = "<group>"; };
+		E392444855AE9EA98BD07F3271452123 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KlikIDM-DS-UiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EB25DAD9ABF647748D3DEABA92E359DA /* Pods-KlikIDM-DS-UiKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KlikIDM-DS-UiKit.modulemap"; sourceTree = "<group>"; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBF5C9E8FBD9686D880500EA6C4B18C9 /* Pods-KlikIDM-DS-UiKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KlikIDM-DS-UiKit-dummy.m"; sourceTree = "<group>"; };
+		FD7B717956497AC33397E99797497DD3 /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KlikIDM-DS-UiKit-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		16576ED6FBF16CDF0D5DB1C153A2F188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3A208628B55A8B7C393C0713E1204D /* Foundation.framework in Frameworks */,
+				A8E003918F0BE353AE7B86CFACF5D05C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6248AA277C7DB6D5C45563F2605CB05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,100 +112,290 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13532751067A2B38D5BCAFF07F2A5906 /* Targets Support Files */ = {
+		14FABAECF55A9D92B0360AC86927ABC1 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				B27F521CB8C4E8CE6796C60A1C374355 /* Pods-KlikIDM-DS-UiKit */,
+				18C293074426C3524D4BA6FA1518743B /* Default */,
+				8F09F8296907BD5D68BDC88CA78BC411 /* SquareRound */,
 			);
-			name = "Targets Support Files";
+			name = CustomCell;
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
-		4FA4619A08A14C93B3CC220D81766E8F /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */,
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9E0DDD568F1008227A5EAFACA57DA9AD /* Pod */ = {
+		18C293074426C3524D4BA6FA1518743B /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				824DD9227B853B3AB7D6B1E5986D8D75 /* KlikIDM-DS-UiKit.podspec */,
-				8867E523610332563B42713244A4C3EF /* LICENSE */,
+				710E0C610717D66F1CFD14048FEA231E /* TabDefaultCell.swift */,
+				B9E68F92ABE4283B628556991D56BFD4 /* TabDefaultModel.swift */,
 			);
-			name = Pod;
+			name = Default;
+			path = Default;
 			sourceTree = "<group>";
 		};
-		B27F521CB8C4E8CE6796C60A1C374355 /* Pods-KlikIDM-DS-UiKit */ = {
+		1A1D4068A33D9CEC48D094B96B5FA48E /* TabContent */ = {
 			isa = PBXGroup;
 			children = (
-				82DD4430F50F511DF51487C75100A0B5 /* Pods-KlikIDM-DS-UiKit.modulemap */,
-				A69E05BE8A3EC0EC86FF2A555B97518C /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */,
-				5E413671257866DBD2939AF12C0E3F3A /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */,
-				DB2AAC4D0A87B17261214C07F64935C4 /* Pods-KlikIDM-DS-UiKit-dummy.m */,
-				D5B4C1AECBC7598F67C2D3F125437BCE /* Pods-KlikIDM-DS-UiKit-Info.plist */,
-				7EBD4684FB5682E586D12738AE8CD768 /* Pods-KlikIDM-DS-UiKit-umbrella.h */,
-				3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */,
-				88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */,
+				D680A7FDA2076D7426A27582CC4928E9 /* Promo */,
+			);
+			name = TabContent;
+			path = TabContent;
+			sourceTree = "<group>";
+		};
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3D72AE5E86DAD3570C9797EDC2CFFBB4 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1EE51C29346775D4114CC8924C338B63 /* Button.swift */,
+			);
+			name = Button;
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4EBDB636F10160E8B437A1CBB0EEC817 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				C6FC329FB2B5C2103311B7C31CBF8644 /* Font */,
+			);
+			name = Asset;
+			path = "KlikIDM-DS-UiKit/Asset";
+			sourceTree = "<group>";
+		};
+		7CEFF401288B69065FFD2EDFC75A7D10 /* CartPage */ = {
+			isa = PBXGroup;
+			children = (
+				0CED7B4997E2E30FCEF973A52C571C97 /* CartViewController.swift */,
+			);
+			name = CartPage;
+			path = CartPage;
+			sourceTree = "<group>";
+		};
+		7E557DA01F2C45C5BBD05C5FE87509E5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F75AD28AD3AB6A60EA25920E0D94D310 /* KlikIDM-DS-UiKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		88F7DD53F2E2B5EDFDF31CBF88E2D06C /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				A1BA2E42DDF2DC97598483EF1171C80C /* TabDefault.swift */,
+				14FABAECF55A9D92B0360AC86927ABC1 /* CustomCell */,
+			);
+			name = Default;
+			path = Default;
+			sourceTree = "<group>";
+		};
+		8DD49D6A44B1B6EECE1C913413747024 /* Pods-KlikIDM-DS-UiKit */ = {
+			isa = PBXGroup;
+			children = (
+				EB25DAD9ABF647748D3DEABA92E359DA /* Pods-KlikIDM-DS-UiKit.modulemap */,
+				330EA64734D26DABCB095826E0A288AF /* Pods-KlikIDM-DS-UiKit-acknowledgements.markdown */,
+				FD7B717956497AC33397E99797497DD3 /* Pods-KlikIDM-DS-UiKit-acknowledgements.plist */,
+				FBF5C9E8FBD9686D880500EA6C4B18C9 /* Pods-KlikIDM-DS-UiKit-dummy.m */,
+				0A545DA37FBD5BEECBB7B2763309525D /* Pods-KlikIDM-DS-UiKit-frameworks.sh */,
+				66B842B3AE03977715529DDB4C2DB1CD /* Pods-KlikIDM-DS-UiKit-Info.plist */,
+				71F04A8D98F68D7717C610FDE860422D /* Pods-KlikIDM-DS-UiKit-umbrella.h */,
+				E392444855AE9EA98BD07F3271452123 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */,
+				AA894F39D31957DCA65AB3E2D317609A /* Pods-KlikIDM-DS-UiKit.release.xcconfig */,
 			);
 			name = "Pods-KlikIDM-DS-UiKit";
 			path = "Target Support Files/Pods-KlikIDM-DS-UiKit";
 			sourceTree = "<group>";
 		};
-		BA384D17C7554EDB9E40C97100F381AE /* KlikIDM-DS-UiKit */ = {
+		8F09F8296907BD5D68BDC88CA78BC411 /* SquareRound */ = {
 			isa = PBXGroup;
 			children = (
-				9E0DDD568F1008227A5EAFACA57DA9AD /* Pod */,
-				C06EE20792596E03813F78F31E8A329F /* Support Files */,
+				977988FD881FA4EDC1EF16149B55E841 /* TabSquareRoundCell.swift */,
+				8950DD7E8B31B3C179009FE16C768160 /* TabSquareRoundModel.swift */,
 			);
-			name = "KlikIDM-DS-UiKit";
-			path = ..;
+			name = SquareRound;
+			path = SquareRound;
 			sourceTree = "<group>";
 		};
-		C06EE20792596E03813F78F31E8A329F /* Support Files */ = {
+		901ECB2565792703CF13C3743FA3913A /* QuadRound */ = {
 			isa = PBXGroup;
 			children = (
-				8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */,
-				B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */,
+				4720A1E155FA5E3631E4A1AD6B476553 /* TabQuadRound.swift */,
+				3626621993EF315C57943A2558207421 /* TabQuadRoundCell.swift */,
 			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/KlikIDM-DS-UiKit";
+			name = QuadRound;
+			path = QuadRound;
+			sourceTree = "<group>";
+		};
+		9DECD1DCC25531010699913A76983F24 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1F897F66706BD9B3B0C4778A31A693E /* Prototype */,
+			);
+			name = ViewController;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B3D182800216706778AE2EC57E71EE57 /* PromoGiftPage */ = {
+			isa = PBXGroup;
+			children = (
+				4386B08BC8BF3B318C33A49FDF568190 /* PromoGiftModel.swift */,
+				BA810D07F6540888E82BA443FD7D7DBB /* PromoGiftViewController.swift */,
+			);
+			name = PromoGiftPage;
+			path = PromoGiftPage;
+			sourceTree = "<group>";
+		};
+		B5066A5D8FD1473680EC5E93B0C4ACCF /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				1A605293FED128492423B8285A9E3804 /* Skeleton.swift */,
+			);
+			name = Skeleton;
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		BA3A8BB01D3E3870E0E445AE887C8E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0AC35866E96BB3830E6524FF80250D /* KlikIDM-DS-UiKit */,
+				CC2E0BB424CD27969AD302E22BCD934D /* Pods-KlikIDM-DS-UiKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6FC329FB2B5C2103311B7C31CBF8644 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				75A189CE39F9387F77182D8F827AC6DF /* Font.swift */,
+			);
+			name = Font;
+			path = Font;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E46D6C036445351F5D5CFAD9717DF2AD /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4FA4619A08A14C93B3CC220D81766E8F /* Products */,
-				13532751067A2B38D5BCAFF07F2A5906 /* Targets Support Files */,
+				7E557DA01F2C45C5BBD05C5FE87509E5 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				BA3A8BB01D3E3870E0E445AE887C8E32 /* Products */,
+				EE8D3343301803C13EC6E5355622E6BE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D680A7FDA2076D7426A27582CC4928E9 /* Promo */ = {
 			isa = PBXGroup;
 			children = (
-				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+				6A1AD5BA076EF32E1125BFCD2450C04F /* PromoContentCell.swift */,
+				705527F38F26DEF460FB8E11DE2EB522 /* PromoContentModel.swift */,
 			);
-			name = Frameworks;
+			name = Promo;
+			path = Promo;
 			sourceTree = "<group>";
 		};
-		E46D6C036445351F5D5CFAD9717DF2AD /* Development Pods */ = {
+		E1F897F66706BD9B3B0C4778A31A693E /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				BA384D17C7554EDB9E40C97100F381AE /* KlikIDM-DS-UiKit */,
+				7CEFF401288B69065FFD2EDFC75A7D10 /* CartPage */,
+				B3D182800216706778AE2EC57E71EE57 /* PromoGiftPage */,
 			);
-			name = "Development Pods";
+			name = Prototype;
+			path = Prototype;
 			sourceTree = "<group>";
 		};
-		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+		E32621D167BBD77DA30C8DB3FA4C02CC /* Tab */ = {
 			isa = PBXGroup;
 			children = (
-				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+				88F7DD53F2E2B5EDFDF31CBF88E2D06C /* Default */,
+				901ECB2565792703CF13C3743FA3913A /* QuadRound */,
 			);
-			name = iOS;
+			name = Tab;
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		E3BF95050043625C7E15341FBC0C204E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4519D8D1C18E4E73E421792F7E41B492 /* Extension.swift */,
+				FAF5AB9DF19E8B80CBC29F116EA7392A /* View */,
+				9DECD1DCC25531010699913A76983F24 /* ViewController */,
+			);
+			name = Component;
+			path = "KlikIDM-DS-UiKit/Component";
+			sourceTree = "<group>";
+		};
+		E42B0102C2492922C20C2E8B17DEE4FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				84A1C21F5DC41D43A7A39790B10813C8 /* KlikIDM-DS-UiKit.podspec */,
+				023FF3FEE87C4FBE6335F97A82245704 /* LICENSE */,
+				219B1F5808D8F9DA6DA33D399E55F219 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E475129E7A6622A5E64BEA9F9F10ED19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFE98BC20677ACEBE5FED7DAB9899BEA /* KlikIDM-DS-UiKit.modulemap */,
+				E1A787328CC81D0C22F8CA2E143D48E3 /* KlikIDM-DS-UiKit-dummy.m */,
+				7B6E23E381F944930D5DA2A0E20F7D98 /* KlikIDM-DS-UiKit-Info.plist */,
+				D34C35F8A6D2C8ED5BB4E29436A6EA83 /* KlikIDM-DS-UiKit-prefix.pch */,
+				63F87D1B1BADA3AC1918FF5D9A99F594 /* KlikIDM-DS-UiKit-umbrella.h */,
+				C31FABAD8E05CCEB4AA71AE4EC0066C2 /* KlikIDM-DS-UiKit.debug.xcconfig */,
+				0AA29F0D414DF9206E528854E9A39C8C /* KlikIDM-DS-UiKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/KlikIDM-DS-UiKit";
+			sourceTree = "<group>";
+		};
+		EE8D3343301803C13EC6E5355622E6BE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DD49D6A44B1B6EECE1C913413747024 /* Pods-KlikIDM-DS-UiKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F75AD28AD3AB6A60EA25920E0D94D310 /* KlikIDM-DS-UiKit */ = {
+			isa = PBXGroup;
+			children = (
+				146C5B55586A46B37DF07F3D7E08B7A5 /* AppDelegate.swift */,
+				D97E6BE0B27DB7D70E6CE623190BDFDE /* Assets.xcassets */,
+				DDD561C9E7DD06465313968BC75A1E9F /* ViewController.swift */,
+				4EBDB636F10160E8B437A1CBB0EEC817 /* Asset */,
+				E3BF95050043625C7E15341FBC0C204E /* Component */,
+				E42B0102C2492922C20C2E8B17DEE4FF /* Pod */,
+				E475129E7A6622A5E64BEA9F9F10ED19 /* Support Files */,
+			);
+			name = "KlikIDM-DS-UiKit";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FAF5AB9DF19E8B80CBC29F116EA7392A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D72AE5E86DAD3570C9797EDC2CFFBB4 /* Button */,
+				B5066A5D8FD1473680EC5E93B0C4ACCF /* Skeleton */,
+				E32621D167BBD77DA30C8DB3FA4C02CC /* Tab */,
+				1A1D4068A33D9CEC48D094B96B5FA48E /* TabContent */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +409,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63EF52433889019849DBE8DCAC64416A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6F2753FEEB9D6F670DABF3A22FD206 /* KlikIDM-DS-UiKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05815F664BA14F2FABBE95A560FFC60C /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKit" */;
+			buildPhases = (
+				63EF52433889019849DBE8DCAC64416A /* Headers */,
+				16F89B1294629F68AC81D89EECB5033E /* Sources */,
+				16576ED6FBF16CDF0D5DB1C153A2F188 /* Frameworks */,
+				57904FCF4AE40D4347F915FFECCD2ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KlikIDM-DS-UiKit";
+			productName = KlikIDM_DS_UiKit;
+			productReference = CC0AC35866E96BB3830E6524FF80250D /* KlikIDM-DS-UiKit */;
+			productType = "com.apple.product-type.framework";
+		};
 		BE573859A487A480E1532F3EAFFED2C1 /* Pods-KlikIDM-DS-UiKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11031FF70E33DA038874D4D635343B83 /* Build configuration list for PBXNativeTarget "Pods-KlikIDM-DS-UiKit" */;
@@ -186,7 +450,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F46F79CC31DB3F28C503FDAF7F2A4F3E /* PBXTargetDependency */,
+				999F495A933F59CB02C46FB5847FB160 /* PBXTargetDependency */,
 			);
 			name = "Pods-KlikIDM-DS-UiKit";
 			productName = Pods_KlikIDM_DS_UiKit;
@@ -213,7 +477,7 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4FA4619A08A14C93B3CC220D81766E8F /* Products */;
+			productRefGroup = BA3A8BB01D3E3870E0E445AE887C8E32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -231,9 +495,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57904FCF4AE40D4347F915FFECCD2ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311D6B85F2383C8C10175B7D397A3C53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		16F89B1294629F68AC81D89EECB5033E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADE30EC7B18F53EC9004366C80A9780 /* AppDelegate.swift in Sources */,
+				8255A3B859DEAD339A6B33B11B521380 /* Button.swift in Sources */,
+				93110BDBA522299BCA140F7B8F869D32 /* CartViewController.swift in Sources */,
+				C4AC0A9C412EF8A880DA9DC376CF6A7F /* Extension.swift in Sources */,
+				80F5684C80BC0FA0FAFA87551211A79E /* Font.swift in Sources */,
+				C301D5AA307D93803BDBFB6CB93113C0 /* KlikIDM-DS-UiKit-dummy.m in Sources */,
+				F32F36B13197F7A687877DC5C6E2B647 /* PromoContentCell.swift in Sources */,
+				79403FA60E3630A512C554DA04D911F7 /* PromoContentModel.swift in Sources */,
+				0777893580341E2348F3FDE72D94F93F /* PromoGiftModel.swift in Sources */,
+				88B44B795CA3F4C1D2784CE78F011A44 /* PromoGiftViewController.swift in Sources */,
+				72BA91589A05A6C93A9B3A4C7CC4412B /* Skeleton.swift in Sources */,
+				23E1BED099B19A4E2BCD1D2A795B2F9E /* TabDefault.swift in Sources */,
+				D992EB2F4F2900AC59EF0755710E0652 /* TabDefaultCell.swift in Sources */,
+				B7871DFD25D3C3D8455013573374CD31 /* TabDefaultModel.swift in Sources */,
+				B6C055A4EF4A212AFE2BD7ACB934DBFD /* TabQuadRound.swift in Sources */,
+				CA4AFC0049BC1DAF874E58E6DA5C4974 /* TabQuadRoundCell.swift in Sources */,
+				FBF331258BA77323EB82565F368E962E /* TabSquareRoundCell.swift in Sources */,
+				0BBC3F6C47950ED13E4E189799EDD4E2 /* TabSquareRoundModel.swift in Sources */,
+				90103F1DB0E7C75A4AEEB398EE678425 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3B333202CAF0AFBB85168C339EA0377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,78 +543,56 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F46F79CC31DB3F28C503FDAF7F2A4F3E /* PBXTargetDependency */ = {
+		999F495A933F59CB02C46FB5847FB160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "KlikIDM-DS-UiKit";
 			target = 725DF6960E37D119B7C8F5183EDD7562 /* KlikIDM-DS-UiKit */;
-			targetProxy = 5A6539DC3C3AA9E9478978580235A9D3 /* PBXContainerItemProxy */;
+			targetProxy = B93D47494C612F1F677DE56400D35B5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+		1124BD78A4894C8E1F59DFF64B14CB57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA894F39D31957DCA65AB3E2D317609A /* Pods-KlikIDM-DS-UiKit.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,9 +658,9 @@
 			};
 			name = Debug;
 		};
-		D71417E7954DC28B3F3C51CF0A4616F9 /* Release */ = {
+		5C77BB9DBDAE0A768256BE3551B46241 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88FCA4B57718B7AD6917FAC5ED9C171E /* Pods-KlikIDM-DS-UiKit.release.xcconfig */;
+			baseConfigurationReference = E392444855AE9EA98BD07F3271452123 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -400,47 +676,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E5DFD54A0F888F316620D9B7DEF530EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BC0706FDF7F7E18C8EC7FFD8DCC94A4 /* Pods-KlikIDM-DS-UiKit.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,60 +697,164 @@
 			};
 			name = Debug;
 		};
-		EA0AE3AA10AA4890D3FBADC0A0FF8244 /* Debug */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC35BCEC3FAD1978E8289CF7D252264 /* KlikIDM-DS-UiKit.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
-					"@executable_path/Frameworks",
 				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F744FF9DC9248494584F63801AE2746C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B662FE9E21EF8DB01ED07C06DC7E1842 /* KlikIDM-DS-UiKit.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		65167F7991C1AB0F6CCA6B2BDE77D6A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA29F0D414DF9206E528854E9A39C8C /* KlikIDM-DS-UiKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit.modulemap";
+				PRODUCT_MODULE_NAME = KlikIDM_DS_UiKit;
+				PRODUCT_NAME = KlikIDM_DS_UiKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A28C09C9A86379AC6B01E5E208D1B836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31FABAD8E05CCEB4AA71AE4EC0066C2 /* KlikIDM-DS-UiKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KlikIDM-DS-UiKit/KlikIDM-DS-UiKit.modulemap";
+				PRODUCT_MODULE_NAME = KlikIDM_DS_UiKit;
+				PRODUCT_NAME = KlikIDM_DS_UiKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11031FF70E33DA038874D4D635343B83 /* Build configuration list for PBXNativeTarget "Pods-KlikIDM-DS-UiKit" */ = {
+		05815F664BA14F2FABBE95A560FFC60C /* Build configuration list for PBXNativeTarget "KlikIDM-DS-UiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5DFD54A0F888F316620D9B7DEF530EC /* Debug */,
-				D71417E7954DC28B3F3C51CF0A4616F9 /* Release */,
+				A28C09C9A86379AC6B01E5E208D1B836 /* Debug */,
+				65167F7991C1AB0F6CCA6B2BDE77D6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32173FD89F022DA1086A29EE64337BE8 /* Build configuration list for PBXAggregateTarget "KlikIDM-DS-UiKit" */ = {
+		11031FF70E33DA038874D4D635343B83 /* Build configuration list for PBXNativeTarget "Pods-KlikIDM-DS-UiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0AE3AA10AA4890D3FBADC0A0FF8244 /* Debug */,
-				F744FF9DC9248494584F63801AE2746C /* Release */,
+				5C77BB9DBDAE0A768256BE3551B46241 /* Debug */,
+				1124BD78A4894C8E1F59DFF64B14CB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -522,8 +862,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

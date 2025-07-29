@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5079E64A2E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */; };
 		5079E68A2E2F7AB800315031 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6892E2F7AB000315031 /* LICENSE */; };
+		5079E6F22E38A45800315031 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5079E6F12E38A44E00315031 /* README.md */; };
 		867E983964E0FEC5A3021467 /* Pods_KlikIDM_DS_UiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA592930C4F4DC4A5CE9DC3 /* Pods_KlikIDM_DS_UiKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		5079E6332E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "KlikIDM-DS-UiKit.podspec"; sourceTree = "<group>"; };
 		5079E6892E2F7AB000315031 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5079E6F12E38A44E00315031 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		50CA6D9E2D6EE80000CC7FBC /* KlikIDM-DS-UiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KlikIDM-DS-UiKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DB42D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA6DBE2D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DS-UiKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,11 +63,15 @@
 		};
 		50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "KlikIDM-DS-UiKitTests";
 			sourceTree = "<group>";
 		};
 		50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "KlikIDM-DS-UiKitUITests";
 			sourceTree = "<group>";
 		};
@@ -108,6 +114,7 @@
 		50CA6D952D6EE80000CC7FBC = {
 			isa = PBXGroup;
 			children = (
+				5079E6F12E38A44E00315031 /* README.md */,
 				50CA6DA02D6EE80000CC7FBC /* KlikIDM-DS-UiKit */,
 				50CA6DB72D6EE80100CC7FBC /* KlikIDM-DS-UiKitTests */,
 				50CA6DC12D6EE80100CC7FBC /* KlikIDM-DS-UiKitUITests */,
@@ -149,6 +156,7 @@
 				50CA6D9A2D6EE80000CC7FBC /* Sources */,
 				50CA6D9B2D6EE80000CC7FBC /* Frameworks */,
 				50CA6D9C2D6EE80000CC7FBC /* Resources */,
+				1505C0E6646C3EF304A6B8FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5079E6F22E38A45800315031 /* README.md in Resources */,
 				5079E68A2E2F7AB800315031 /* LICENSE in Resources */,
 				5079E64A2E2A22BA00315031 /* KlikIDM-DS-UiKit.podspec in Resources */,
 			);
@@ -275,6 +284,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1505C0E6646C3EF304A6B8FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS-UiKit/Pods-KlikIDM-DS-UiKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4DE57541329DB38DE449650D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
