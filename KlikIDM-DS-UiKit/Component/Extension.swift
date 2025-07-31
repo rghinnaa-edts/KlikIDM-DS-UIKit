@@ -9,49 +9,47 @@ import UIKit
 import ObjectiveC
 
 extension UIView {
-    private struct AssociatedKeys {
-        static let topLeftCornerRadius = UnsafeRawPointer(bitPattern: "topLeftCornerRadius".hashValue)!
-        static let topRightCornerRadius = UnsafeRawPointer(bitPattern: "topRightCornerRadius".hashValue)!
-        static let bottomLeftCornerRadius = UnsafeRawPointer(bitPattern: "bottomLeftCornerRadius".hashValue)!
-        static let bottomRightCornerRadius = UnsafeRawPointer(bitPattern: "bottomRightCornerRadius".hashValue)!
-    }
+    private static var topLeftCornerRadiusKey = 0
+    private static var topRightCornerRadiusKey = 0
+    private static var bottomLeftCornerRadiusKey = 0
+    private static var bottomRightCornerRadiusKey = 0
 
     var isTopLeftCornerRounded: Bool {
         get {
-            return (objc_getAssociatedObject(self, AssociatedKeys.topLeftCornerRadius) as? Bool) ?? false
+            return (objc_getAssociatedObject(self, &Self.topLeftCornerRadiusKey) as? Bool) ?? false
         }
         set {
-            objc_setAssociatedObject(self, AssociatedKeys.topLeftCornerRadius, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &Self.topLeftCornerRadiusKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateCornerMask()
         }
     }
 
     var isTopRightCornerRounded: Bool {
         get {
-            return (objc_getAssociatedObject(self, AssociatedKeys.topRightCornerRadius) as? Bool) ?? false
+            return (objc_getAssociatedObject(self, &Self.topRightCornerRadiusKey) as? Bool) ?? false
         }
         set {
-            objc_setAssociatedObject(self, AssociatedKeys.topRightCornerRadius, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &Self.topRightCornerRadiusKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateCornerMask()
         }
     }
 
     var isBottomLeftCornerRounded: Bool {
         get {
-            return (objc_getAssociatedObject(self, AssociatedKeys.bottomLeftCornerRadius) as? Bool) ?? false
+            return (objc_getAssociatedObject(self, &Self.bottomLeftCornerRadiusKey) as? Bool) ?? false
         }
         set {
-            objc_setAssociatedObject(self, AssociatedKeys.bottomLeftCornerRadius, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &Self.bottomLeftCornerRadiusKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateCornerMask()
         }
     }
 
     var isBottomRightCornerRounded: Bool {
         get {
-            return (objc_getAssociatedObject(self, AssociatedKeys.bottomRightCornerRadius) as? Bool) ?? false
+            return (objc_getAssociatedObject(self, &Self.bottomRightCornerRadiusKey) as? Bool) ?? false
         }
         set {
-            objc_setAssociatedObject(self, AssociatedKeys.bottomRightCornerRadius, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &Self.bottomRightCornerRadiusKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateCornerMask()
         }
     }
@@ -108,3 +106,4 @@ extension UIView {
         }
     }
 }
+

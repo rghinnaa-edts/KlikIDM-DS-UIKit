@@ -20,7 +20,7 @@
     "tag": "0.1.0"
   },
   "source_files": "KlikIDM-DS-UiKit/**/*.{h,m,swift}",
-  "resources": "KlikIDM-DS-UiKit/**/*.xcassets",
+  "resources": "KlikIDM-DS-UiKit/Images.xcassets",
   "frameworks": "UIKit",
   "swift_version": "6.2"
 }

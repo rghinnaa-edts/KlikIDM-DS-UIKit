@@ -1,5 +1,5 @@
 //
-//  KlikColor.swift
+//  KlikUIColor.swift
 //  KlikIDM-DS-UiKit
 //
 //  Created by Rizka Ghinna Auliya on 29/07/25.
@@ -7,110 +7,294 @@
 
 import UIKit
 
-extension Color {
+extension UIColor {
     
-    struct Neutral {
-        static let whiteIDM = Color("WhiteIDM")
-        static let blackIDM = Color("BlackIDM")
+    // Neutral
+    
+    static var white: UIColor? {
+        return UIColor(named: "White")
     }
     
-    struct Grey {
-        static let grey10 = Color("Grey-10")
-        static let grey20 = Color("Grey-20")
-        static let grey30 = Color("Grey-30")
-        static let grey40 = Color("Grey-40")
-        static let grey50 = Color("Grey-50")
-        static let grey60 = Color("Grey-60")
-        static let grey70 = Color("Grey-70")
+    static var black: UIColor? {
+        return UIColor(named: "Black")
     }
     
-    struct Blue {
-        static let blue10 = Color("Blue-10")
-        static let blue20 = Color("Blue-20")
-        static let blue30 = Color("Blue-30")
-        static let blue40 = Color("Blue-40")
-        static let blue50 = Color("Blue-50")
-        static let blue60 = Color("Blue-60")
-        static let blue70 = Color("Blue-70")
-        static let blueTab = Color("BlueTab")
+    
+    // Grey
+    
+    static var grey10: UIColor? {
+        return UIColor(named: "10Grey")
     }
     
-    struct Yellow {
-        static let yellow10 = Color("Yellow-10")
-        static let yellow20 = Color("Yellow-20")
-        static let yellow30 = Color("Yellow-30")
-        static let yellow40 = Color("Yellow-40")
-        static let yellow50 = Color("Yellow-50")
+    static var grey20: UIColor? {
+        return UIColor(named: "20Grey")
     }
     
-    struct Red {
-        static let red10 = Color("Red-10")
-        static let red20 = Color("Red-20")
-        static let red30 = Color("Red-30")
-        static let red40 = Color("Red-40")
-        static let red50 = Color("Red-50")
+    static var grey30: UIColor? {
+        return UIColor(named: "30Grey")
     }
     
-    struct Green {
-        static let green10 = Color("Green-10")
-        static let green20 = Color("Green-20")
-        static let green30 = Color("Green-30")
-        static let green40 = Color("Green-40")
-        static let green50 = Color("Green-50")
+    static var grey40: UIColor? {
+        return UIColor(named: "40Grey")
     }
     
-    struct Orange {
-        static let orange10 = Color("Orange-10")
-        static let orange20 = Color("Orange-20")
-        static let orange30 = Color("Orange-30")
-        static let orange40 = Color("Orange-40")
-        static let orange50 = Color("Orange-50")
+    static var grey50: UIColor? {
+        return UIColor(named: "50Grey")
     }
     
-    struct Button {
-        static let blueDefault = Color("Blue-Default")
-        static let bluePressed = Color("Blue-Pressed")
-        static let greyDefault = Color("Grey-Default")
-        static let greyPressed = Color("Grey-Pressed")
-        static let greyText = Color("Grey-Text")
-        static let cartDefault = Color("Cart-Default")
-        static let cartPressed = Color("Cart-Pressed")
-        static let disabled = Color("Disabled")
+    static var grey60: UIColor? {
+        return UIColor(named: "60Grey")
+    }
+    
+    static var grey70: UIColor? {
+        return UIColor(named: "70Grey")
+    }
+    
+    
+    // Blue
+    
+    static var blue10: UIColor? {
+        return UIColor(named: "10Blue")
+    }
+    
+    static var blue20: UIColor? {
+        return UIColor(named: "20Blue")
+    }
+    
+    static var blue30: UIColor? {
+        return UIColor(named: "30Blue")
+    }
+    
+    static var blue40: UIColor? {
+        return UIColor(named: "40Blue")
+    }
+    
+    static var blue50: UIColor? {
+        return UIColor(named: "50Blue")
+    }
+    
+    static var blue60: UIColor? {
+        return UIColor(named: "60Blue")
+    }
+    
+    static var blue70: UIColor? {
+        return UIColor(named: "70Blue")
+    }
+    
+    
+    // Yellow
+    
+    static var yellow10: UIColor? {
+        return UIColor(named: "10Yellow")
+    }
+    
+    static var yellow20: UIColor? {
+        return UIColor(named: "20Yellow")
+    }
+    
+    static var yellow30: UIColor? {
+        return UIColor(named: "30Yellow")
+    }
+    
+    static var yellow40: UIColor? {
+        return UIColor(named: "40Yellow")
+    }
+    
+    static var yellow50: UIColor? {
+        return UIColor(named: "50Yellow")
+    }
+    
+    
+    // Red
+    
+    static var red10: UIColor? {
+        return UIColor(named: "10Red")
+    }
+    
+    static var red20: UIColor? {
+        return UIColor(named: "20Red")
+    }
+    
+    static var red30: UIColor? {
+        return UIColor(named: "30Red")
+    }
+    
+    static var red40: UIColor? {
+        return UIColor(named: "40Red")
+    }
+    
+    static var red50: UIColor? {
+        return UIColor(named: "50Red")
+    }
+    
+    
+    // Green
+    
+    static var green10: UIColor? {
+        return UIColor(named: "10Green")
+    }
+    
+    static var green20: UIColor? {
+        return UIColor(named: "20Green")
+    }
+    
+    static var green30: UIColor? {
+        return UIColor(named: "30Green")
+    }
+    
+    static var green40: UIColor? {
+        return UIColor(named: "40Green")
+    }
+    
+    static var green50: UIColor? {
+        return UIColor(named: "50Green")
+    }
+    
+    
+    // Orange
+    
+    static var orange10: UIColor? {
+        return UIColor(named: "10Orange")
+    }
+    
+    static var orange20: UIColor? {
+        return UIColor(named: "20Orange")
+    }
+    
+    static var orange30: UIColor? {
+        return UIColor(named: "30Orange")
+    }
+    
+    static var orange40: UIColor? {
+        return UIColor(named: "40Orange")
+    }
+    
+    static var orange50: UIColor? {
+        return UIColor(named: "50Orange")
+    }
+    
+    
+    // Button
+    
+    static var blueDefault: UIColor? {
+        return UIColor(named: "DefaultBlue")
+    }
+    
+    static var bluePressed: UIColor? {
+        return UIColor(named: "PressedBlue")
+    }
+    
+    static var greyDefault: UIColor? {
+        return UIColor(named: "DefaultGrey")
+    }
+    
+    static var greyPressed: UIColor? {
+        return UIColor(named: "PressedGrey")
+    }
+    
+    static var greyText: UIColor? {
+        return UIColor(named: "TextGrey")
+    }
+    
+    static var cartDefault: UIColor? {
+        return UIColor(named: "DefaultCart")
+    }
+    
+    static var cartPressed: UIColor? {
+        return UIColor(named: "PressedCart")
+    }
+    
+    static var disabled: UIColor? {
+        return UIColor(named: "Disable")
     }
     
     struct Support {
-        static let errorStrong = Color("Error-Strong")
-        static let errorWeak = Color("Error-Weak")
-        static let successStrong = Color("Success-Strong")
-        static let successWeak = Color("Success-Weak")
-        static let warningStrong = Color("Warning-Strong")
-        static let warningWeak = Color("Warning-Weak")
+        static let errorStrong = UIColor(named: "Error-Strong")
+        static let errorWeak = UIColor(named: "Error-Weak")
+        static let successStrong = UIColor(named: "Success-Strong")
+        static let successWeak = UIColor(named: "Success-Weak")
+        static let warningStrong = UIColor(named: "Warning-Strong")
+        static let warningWeak = UIColor(named: "Warning-Weak")
     }
     
     struct Brand {
-        static let xtra = Color("Xtra")
-        static let xpress = Color("Xpress")
+        static let xtra = UIColor(named: "Xtra")
+        static let xpress = UIColor(named: "Xpress")
     }
     
     struct Gradient {
-        static let sunset = LinearGradient(
-            colors: [Color("Sunset-Start"), Color("Sunset-End")],
+        static let sunset = UIKitGradient(
+            colors: [
+                UIColor(named: "Sunset-Start") ?? .systemOrange,
+                UIColor(named: "Sunset-End") ?? .systemRed
+            ],
             startPoint: .leading,
-            endPoint: .trailing)
+            endPoint: .trailing
+        )
         
-        static let skyblue = LinearGradient(
-            colors: [Color("Skyblue-Start"), Color("Skyblue-End")],
+        static let skyblue = UIKitGradient(
+            colors: [
+                UIColor(named: "Skyblue-Start") ?? .systemBlue,
+                UIColor(named: "Skyblue-End") ?? .systemTeal
+            ],
             startPoint: .leading,
-            endPoint: .trailing)
+            endPoint: .trailing
+        )
         
-        static let greenforest = LinearGradient(
-            colors: [Color("Greenforest-Start"), Color("Greenforest-End")],
+        static let greenforest = UIKitGradient(
+            colors: [
+                UIColor(named: "Greenforest-Start") ?? .systemGreen,
+                UIColor(named: "Greenforest-End") ?? .systemGreen
+            ],
             startPoint: .leading,
-            endPoint: .trailing)
+            endPoint: .trailing
+        )
         
-        static let sunflower = LinearGradient(
-            colors: [Color("Sunflower-Start"), Color("Sunflower-End")],
+        static let sunflower = UIKitGradient(
+            colors: [
+                UIColor(named: "Sunflower-Start") ?? .systemYellow,
+                UIColor(named: "Sunflower-End") ?? .systemOrange
+            ],
             startPoint: .leading,
-            endPoint: .trailing)
+            endPoint: .trailing
+        )
+    }
+    
+    struct UIKitGradient {
+        let colors: [UIColor]
+        let startPoint: GradientPoint
+        let endPoint: GradientPoint
+        
+        enum GradientPoint {
+            case leading, trailing, top, bottom
+            case topLeading, topTrailing, bottomLeading, bottomTrailing
+            case center
+            case custom(x: CGFloat, y: CGFloat)
+            
+            var cgPoint: CGPoint {
+                switch self {
+                case .leading:
+                    return CGPoint(x: 0, y: 0.5)
+                case .trailing:
+                    return CGPoint(x: 1, y: 0.5)
+                case .top:
+                    return CGPoint(x: 0.5, y: 0)
+                case .bottom:
+                    return CGPoint(x: 0.5, y: 1)
+                case .topLeading:
+                    return CGPoint(x: 0, y: 0)
+                case .topTrailing:
+                    return CGPoint(x: 1, y: 0)
+                case .bottomLeading:
+                    return CGPoint(x: 0, y: 1)
+                case .bottomTrailing:
+                    return CGPoint(x: 1, y: 1)
+                case .center:
+                    return CGPoint(x: 0.5, y: 0.5)
+                case .custom(let x, let y):
+                    return CGPoint(x: x, y: y)
+                }
+            }
+        }
     }
 }
